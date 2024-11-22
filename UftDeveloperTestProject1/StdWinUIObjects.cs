@@ -19,7 +19,7 @@ namespace UftDeveloperTestProject1
             IsChildWindow = false,
             IsOwnedWindow = false,
             WindowClassRegExp = @"Afx:",
-            WindowTitleRegExp = @"Aspen Basic Engineering V15"
+            WindowTitleRegExp = @"Aspen Basic Engineering " + EnvironmentSetting.version
         });
 
         public static ITreeView SysTreeView32TreeView = AspenBasicEngineeringV15Window.Describe<ITreeView>(new TreeViewDescription
@@ -42,8 +42,75 @@ namespace UftDeveloperTestProject1
             NativeClass = @"Edit"
         });
 
+        // Open Workspace 
+
+        public static IDialog OpenAspenBasicEngineeringV15WorkspaceDialog = AspenBasicEngineeringV15Window.Describe<IDialog>(new DialogDescription
+        {
+            IsChildWindow = false,
+            IsOwnedWindow = true,
+            NativeClass = @"#32770",
+            Text = @"Open Aspen Basic Engineering " + EnvironmentSetting.version + " Workspace"
+        });
+
+        public static IButton cONNECTIONButton = OpenAspenBasicEngineeringV15WorkspaceDialog.Describe<IButton>(new ButtonDescription
+            {
+                NativeClass = @"Button",
+                Text = @"CONNECTION",
+                WindowId = 337
+            });
+
+        public static IButton BrowseButton = OpenAspenBasicEngineeringV15WorkspaceDialog.Describe<IButton>(new ButtonDescription
+        {
+            NativeClass = @"Button",
+            Text = @"&Browse..."
+        });
+
+        public static IDialog SelectWorkspaceOrProjectDialog = Desktop.Describe<IDialog>(new DialogDescription
+        {
+            IsChildWindow = false,
+            IsOwnedWindow = true,
+            NativeClass = @"#32770",
+            Text = @"Select Workspace or Project"
+        });
+        public static ITreeView SysTreeView32TreeViewOpenWorkspace = SelectWorkspaceOrProjectDialog.Describe<ITreeView>(new TreeViewDescription
+        {
+            NativeClass = @"SysTreeView32"
+        });
+
+        public static IButton OKButtonOpenWorkspace = SelectWorkspaceOrProjectDialog.Describe<IButton>(new ButtonDescription
+        {
+            NativeClass = @"Button",
+            Text = @"OK"
+        });
+
+        public static IButton OpenButtonOpenWorkspace = OpenAspenBasicEngineeringV15WorkspaceDialog.Describe<IButton>(new ButtonDescription
+            {
+                NativeClass = @"Button",
+                Text = @"&Open"
+            });
+
+        // Create Centrifugal Pump 
+        public static IDialog SelectClassDialogCreatePump = AspenBasicEngineeringV15Window.Describe<IDialog>(new DialogDescription
+        {
+            IsChildWindow = false,
+            IsOwnedWindow = true,
+            NativeClass = @"#32770",
+            Text = @"Select Class"
+        });
+
+        public static IListBox ListBoxCreatePump = SelectClassDialogCreatePump.Describe<IListBox>(new ListBoxDescription
+        {
+            NativeClass = @"ListBox"
+        });
+
+        public static IButton OKButtonCreatePump = SelectClassDialogCreatePump.Describe<IButton>(new ButtonDescription
+            {
+                NativeClass = @"Button",
+                Text = @"OK"
+            });
+
         //Create datasheet
-        
+
 
         public static IDialog SelectDatasheetByTypeDialog = AspenBasicEngineeringV15Window.Describe<IDialog>(new DialogDescription
         {

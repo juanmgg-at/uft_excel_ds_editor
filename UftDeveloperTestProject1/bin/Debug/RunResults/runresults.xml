@@ -1,15 +1,15 @@
 <Results>
   <GeneralInfo>
-    <RunStartTime>2024-11-21 16:55:47</RunStartTime>
+    <RunStartTime>2024-11-22 15:54:22</RunStartTime>
     <Timezone>GMT-0800 (Pacific Standard Time)</Timezone>
     <OrchestrationToolName>UnitTestAdapter:</OrchestrationToolName>
     <ReportTitle>UFT Developer Report</ReportTitle>
   </GeneralInfo>
   <ReportNode type="Run">
     <Data>
-      <StartTime>2024-11-21 16:55:47</StartTime>
-      <Duration>14</Duration>
-      <Result>Failed</Result>
+      <StartTime>2024-11-22 15:54:22</StartTime>
+      <Duration>9</Duration>
+      <Result>Passed</Result>
       <ErrorText></ErrorText>
       <Links></Links>
       <Extension>
@@ -36,10 +36,10 @@
     <ReportNode type="Assembly">
       <Data>
         <Name>UftDeveloperTestProject1</Name>
-        <Description><![CDATA[<pre>Version: 1.0.0.0</pre>]]></Description>
-        <StartTime>11/21/2024 4:55:47 PM</StartTime>
-        <Duration>14</Duration>
-        <Result>Failed</Result>
+        <Description><![CDATA[Version: 1.0.0.0]]></Description>
+        <StartTime>11/22/2024 3:54:22 PM</StartTime>
+        <Duration>9</Duration>
+        <Result>Passed</Result>
         <Video></Video>
         <ErrorText></ErrorText>
         <Links></Links>
@@ -53,10 +53,10 @@
       <ReportNode type="Namespace">
         <Data>
           <Name>UftDeveloperTestProject1</Name>
-          <Description><![CDATA[<pre></pre>]]></Description>
-          <StartTime>11/21/2024 4:55:47 PM</StartTime>
-          <Duration>14</Duration>
-          <Result>Failed</Result>
+          <Description><![CDATA[]]></Description>
+          <StartTime>11/22/2024 3:54:22 PM</StartTime>
+          <Duration>9</Duration>
+          <Result>Passed</Result>
           <Video></Video>
           <ErrorText></ErrorText>
           <Links></Links>
@@ -70,10 +70,10 @@
         <ReportNode type="Class">
           <Data>
             <Name>UftDeveloperTest</Name>
-            <Description><![CDATA[<pre></pre>]]></Description>
-            <StartTime>11/21/2024 4:55:47 PM</StartTime>
-            <Duration>14</Duration>
-            <Result>Failed</Result>
+            <Description><![CDATA[]]></Description>
+            <StartTime>11/22/2024 3:54:22 PM</StartTime>
+            <Duration>9</Duration>
+            <Result>Passed</Result>
             <Video></Video>
             <ErrorText></ErrorText>
             <Links></Links>
@@ -86,25 +86,12 @@
           </Data>
           <ReportNode type="Test">
             <Data>
-              <Name><![CDATA[_010_OpenDatasheet]]></Name>
-              <Description><![CDATA[<pre></pre>]]></Description>
-              <StartTime>2024-11-21 16:55:47</StartTime>
-              <Duration>14</Duration>
-              <Result>Failed</Result>
-              <ErrorText><![CDATA[<b>Operation '_010_OpenDatasheet' failed:</b><BR/><pre>HP.LFT.SDK.ReplayItemNotFoundException: Cannot identify the specified item of the [ SysListView32 ] object. Confirm that the specified item is included in the object&apos;s item collection.
-   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuterBase.HandleReplayError(Int32 errorCode, IDictionary`2 data)
-   at HP.LFT.SDK.Core.Communication.CommunicationClient.HandleError(Action`2 onError, Int32 status, IDictionary`2 data)
-   at HP.LFT.SDK.Core.Communication.CommunicationClient.Send(String messageType, IDictionary`2 data, Action`2 onError)
-   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuter.ExecuteMethod(String methodName, Object[] arguments)
-   at HP.LFT.SDK.Core.ClassModel.TestObjectBase.ExecuteMethod(String methodName, Object[] arguments)
-   at HP.LFT.SDK.ContainerHelper.ExecuteOnItemsCollection[TItem](TestObjectBase testobject, String firstItemAction, String restOfItemsAction, TItem[] items, Func`2 itemTransformation, Object[] firstActionArgs)
-   at HP.LFT.SDK.StdWin.ListBase`1.&lt;&gt;c__DisplayClass14_0.&lt;Select&gt;b__0()
-   at HP.LFT.SDK.OperationExecutionWrapper.&lt;&gt;c__DisplayClass19_0.&lt;ExecuteWithEvents&gt;b__0()
-   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEventsInternally[T](ITestObject testObject, Object additionalInfo, Func`1 innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
-   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(ITestObject testObject, Object additionalInfo, Action innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
-   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents[T1](Action innerAction, Action`1 originalMethod, T1 param1, Boolean reportOnlyOnError, ITestObject testObject, Object additionalInfo)
-   at HP.LFT.SDK.StdWin.ListBase`1.Select(Int32[] itemIndices)
-   at UftDeveloperTestProject1.UftDeveloperTest._010_OpenDatasheet() in C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\UftDeveloperTest.cs:line 318</pre>]]></ErrorText>
+              <Name><![CDATA[_0002_CreateCentrifugalPump]]></Name>
+              <Description><![CDATA[]]></Description>
+              <StartTime>2024-11-22 15:54:22</StartTime>
+              <Duration>9</Duration>
+              <Result>Passed</Result>
+              <ErrorText></ErrorText>
               <Links></Links>
               <Extension>
                 <Any>
@@ -117,8 +104,8 @@
               <Data>
                 <Name><![CDATA[Aspen Basic Engineering V15.Activate]]></Name>
                 <Description><![CDATA[]]></Description>
-                <StartTime>2024-11-21 16:55:48</StartTime>
-                <Duration>10</Duration>
+                <StartTime>2024-11-22 15:54:22</StartTime>
+                <Duration>1</Duration>
                 <Result>Passed</Result>
                 <ErrorText></ErrorText>
                 <Links></Links>
@@ -176,8 +163,8 @@
             <ReportNode type="Step">
               <Data>
                 <Name><![CDATA[SysTreeView32.Select]]></Name>
-                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>node</td><td class='ex-value'>\\gutierrj-S22.qae.aspentech.com\A1;All Datasheets</td></tr><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
-                <StartTime>2024-11-21 16:55:58</StartTime>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>node</td><td class='ex-value'>\\gutierrj-S22.qae.aspentech.com\A1</td></tr><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
+                <StartTime>2024-11-22 15:54:23</StartTime>
                 <Duration>2</Duration>
                 <Result>Passed</Result>
                 <ErrorText></ErrorText>
@@ -197,7 +184,7 @@
                         </Object>
                       </Path>
                       <Operation>Select</Operation>
-                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>node</td><td class='ex-value'>\\gutierrj-S22.qae.aspentech.com\A1;All Datasheets</td></tr><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>node</td><td class='ex-value'>\\gutierrj-S22.qae.aspentech.com\A1</td></tr><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
                       <Properties>
                         <Property>
                           <Name><![CDATA[NativeClass]]></Name>
@@ -209,7 +196,7 @@
                         </Property>
                         <Property>
                           <Name><![CDATA[Index]]></Name>
-                          <Value><![CDATA[0]]></Value>
+                          <Value><![CDATA[1]]></Value>
                         </Property>
                       </Properties>
                     </TestObject>
@@ -240,25 +227,12 @@
             </ReportNode>
             <ReportNode type="Step">
               <Data>
-                <Name><![CDATA[SysListView32.Select]]></Name>
-                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>itemIndices</td><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr>[ 1 ]</tr></table></td></tr></table>]]></Description>
-                <StartTime>2024-11-21 16:56:00</StartTime>
-                <Duration>1</Duration>
-                <Result>Failed</Result>
-                <ErrorText><![CDATA[<b>Operation 'SysListView32.Select' failed:</b><BR/><pre>HP.LFT.SDK.ReplayItemNotFoundException: Cannot identify the specified item of the [ SysListView32 ] object. Confirm that the specified item is included in the object&apos;s item collection.
-   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuterBase.HandleReplayError(Int32 errorCode, IDictionary`2 data)
-   at HP.LFT.SDK.Core.Communication.CommunicationClient.HandleError(Action`2 onError, Int32 status, IDictionary`2 data)
-   at HP.LFT.SDK.Core.Communication.CommunicationClient.Send(String messageType, IDictionary`2 data, Action`2 onError)
-   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuter.ExecuteMethod(String methodName, Object[] arguments)
-   at HP.LFT.SDK.Core.ClassModel.TestObjectBase.ExecuteMethod(String methodName, Object[] arguments)
-   at HP.LFT.SDK.ContainerHelper.ExecuteOnItemsCollection[TItem](TestObjectBase testobject, String firstItemAction, String restOfItemsAction, TItem[] items, Func`2 itemTransformation, Object[] firstActionArgs)
-   at HP.LFT.SDK.StdWin.ListBase`1.&lt;&gt;c__DisplayClass14_0.&lt;Select&gt;b__0()
-   at HP.LFT.SDK.OperationExecutionWrapper.&lt;&gt;c__DisplayClass19_0.&lt;ExecuteWithEvents&gt;b__0()
-   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEventsInternally[T](ITestObject testObject, Object additionalInfo, Func`1 innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
-   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(ITestObject testObject, Object additionalInfo, Action innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
-   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents[T1](Action innerAction, Action`1 originalMethod, T1 param1, Boolean reportOnlyOnError, ITestObject testObject, Object additionalInfo)
-   at HP.LFT.SDK.StdWin.ListBase`1.Select(Int32[] itemIndices)
-   at UftDeveloperTestProject1.UftDeveloperTest._010_OpenDatasheet() in C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\UftDeveloperTest.cs:line 318</pre>]]></ErrorText>
+                <Name><![CDATA[SysTreeView32.SendKeys]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>input</td><td class='ex-value'>b</td></tr><tr><td class='ex-name'>modifiers</td><td class='ex-value'>Alt</td></tr></table>]]></Description>
+                <StartTime>2024-11-22 15:54:24</StartTime>
+                <Duration>2</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
                 <Links></Links>
                 <Extension>
                   <Any>
@@ -270,20 +244,24 @@
                           <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
                         </Object>
                         <Object>
-                          <Type>Standard Windows.Window</Type>
-                          <Name><![CDATA[Filter View: AllDatasheets]]></Name>
-                        </Object>
-                        <Object>
-                          <Type>Standard Windows.ListView</Type>
-                          <Name><![CDATA[SysListView32]]></Name>
+                          <Type>Standard Windows.TreeView</Type>
+                          <Name><![CDATA[SysTreeView32]]></Name>
                         </Object>
                       </Path>
-                      <Operation>Select</Operation>
-                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>itemIndices</td><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr>[ 1 ]</tr></table></td></tr></table>]]></OperationData>
+                      <Operation>SendKeys</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>input</td><td class='ex-value'>b</td></tr><tr><td class='ex-name'>modifiers</td><td class='ex-value'>Alt</td></tr></table>]]></OperationData>
                       <Properties>
                         <Property>
                           <Name><![CDATA[NativeClass]]></Name>
-                          <Value><![CDATA[SysListView32]]></Value>
+                          <Value><![CDATA[SysTreeView32]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[WindowId]]></Name>
+                          <Value><![CDATA[2]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[Index]]></Name>
+                          <Value><![CDATA[1]]></Value>
                         </Property>
                       </Properties>
                     </TestObject>
@@ -297,19 +275,346 @@
                             <IconKey><![CDATA[Window]]></IconKey>
                           </Object>
                           <Object>
-                            <Type>Standard Windows.Window</Type>
-                            <Name><![CDATA[Filter View: AllDatasheets]]></Name>
-                            <IconKey><![CDATA[Window]]></IconKey>
-                          </Object>
-                          <Object>
-                            <Type>Standard Windows.ListView</Type>
-                            <Name><![CDATA[SysListView32]]></Name>
-                            <IconKey><![CDATA[ListView]]></IconKey>
+                            <Type>Standard Windows.TreeView</Type>
+                            <Name><![CDATA[SysTreeView32]]></Name>
+                            <IconKey><![CDATA[TreeView]]></IconKey>
                           </Object>
                         </Path>
                       </TestObject>
                     </Descriptive>
-                    <IconKey>ListView</IconKey>
+                    <IconKey>TreeView</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[Menu Bar.SendKeys]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>input</td><td class='ex-value'>c</td></tr></table>]]></Description>
+                <StartTime>2024-11-22 15:54:25</StartTime>
+                <Duration>1</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.UiObject</Type>
+                          <Name><![CDATA[Menu Bar]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>SendKeys</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>input</td><td class='ex-value'>c</td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[WindowId]]></Name>
+                          <Value><![CDATA[59398]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[WindowClassRegExp]]></Name>
+                          <Value><![CDATA[Afx:]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.UiObject</Type>
+                            <Name><![CDATA[Menu Bar]]></Name>
+                            <IconKey><![CDATA[UiObject]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>UiObject</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[Select Class.Activate]]></Name>
+                <Description><![CDATA[]]></Description>
+                <StartTime>2024-11-22 15:54:26</StartTime>
+                <Duration>2</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.Dialog</Type>
+                          <Name><![CDATA[Select Class]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Activate</Operation>
+                      <OperationData><![CDATA[]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[IsChildWindow]]></Name>
+                          <Value><![CDATA[false]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[IsOwnedWindow]]></Name>
+                          <Value><![CDATA[true]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[NativeClass]]></Name>
+                          <Value><![CDATA[#32770]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[Text]]></Name>
+                          <Value><![CDATA[Select Class]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.Dialog</Type>
+                            <Name><![CDATA[Select Class]]></Name>
+                            <IconKey><![CDATA[Dialog]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>Dialog</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[ListBox.Click]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
+                <StartTime>2024-11-22 15:54:27</StartTime>
+                <Duration>1</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.Dialog</Type>
+                          <Name><![CDATA[Select Class]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.ListBox</Type>
+                          <Name><![CDATA[ListBox]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Click</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[NativeClass]]></Name>
+                          <Value><![CDATA[ListBox]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.Dialog</Type>
+                            <Name><![CDATA[Select Class]]></Name>
+                            <IconKey><![CDATA[Dialog]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.ListBox</Type>
+                            <Name><![CDATA[ListBox]]></Name>
+                            <IconKey><![CDATA[ListBox]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>ListBox</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[ListBox.Select]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>items</td><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr>[ Centrifugal Pump ]</tr></table></td></tr></table>]]></Description>
+                <StartTime>2024-11-22 15:54:28</StartTime>
+                <Duration>1</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.Dialog</Type>
+                          <Name><![CDATA[Select Class]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.ListBox</Type>
+                          <Name><![CDATA[ListBox]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Select</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>items</td><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr>[ Centrifugal Pump ]</tr></table></td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[NativeClass]]></Name>
+                          <Value><![CDATA[ListBox]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.Dialog</Type>
+                            <Name><![CDATA[Select Class]]></Name>
+                            <IconKey><![CDATA[Dialog]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.ListBox</Type>
+                            <Name><![CDATA[ListBox]]></Name>
+                            <IconKey><![CDATA[ListBox]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>ListBox</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[OK.Click]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
+                <StartTime>2024-11-22 15:54:29</StartTime>
+                <Duration>1</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.Dialog</Type>
+                          <Name><![CDATA[Select Class]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.Button</Type>
+                          <Name><![CDATA[OK]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Click</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[NativeClass]]></Name>
+                          <Value><![CDATA[Button]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[Text]]></Name>
+                          <Value><![CDATA[OK]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.Dialog</Type>
+                            <Name><![CDATA[Select Class]]></Name>
+                            <IconKey><![CDATA[Dialog]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.Button</Type>
+                            <Name><![CDATA[OK]]></Name>
+                            <IconKey><![CDATA[Button]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>Button</IconKey>
                     <CustomUIElements>
                       <DescriptionLabel>Data</DescriptionLabel>
                     </CustomUIElements>

@@ -1,0 +1,7 @@
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\Debug\obj\Debug\Debug.csprojAssemblyReference.cache
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\Debug\obj\Debug\Debug.csproj.CoreCompileInputs.cache
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\Debug\bin\Debug\Debug.exe.config
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\Debug\bin\Debug\Debug.exe
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\Debug\bin\Debug\Debug.pdb
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\Debug\obj\Debug\Debug.exe
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\Debug\obj\Debug\Debug.pdb
