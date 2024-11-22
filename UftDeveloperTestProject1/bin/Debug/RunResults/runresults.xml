@@ -1,0 +1,325 @@
+<Results>
+  <GeneralInfo>
+    <RunStartTime>2024-11-21 16:55:47</RunStartTime>
+    <Timezone>GMT-0800 (Pacific Standard Time)</Timezone>
+    <OrchestrationToolName>UnitTestAdapter:</OrchestrationToolName>
+    <ReportTitle>UFT Developer Report</ReportTitle>
+  </GeneralInfo>
+  <ReportNode type="Run">
+    <Data>
+      <StartTime>2024-11-21 16:55:47</StartTime>
+      <Duration>14</Duration>
+      <Result>Failed</Result>
+      <ErrorText></ErrorText>
+      <Links></Links>
+      <Extension>
+        <Any>
+          <IconKey>Run</IconKey>
+          <IsHtmlErrorText>true</IsHtmlErrorText>
+        </Any>
+      </Extension>
+      <Name>Run Results</Name>
+      <Environment>
+        <OSInfo><![CDATA[Windows_NT 10.0.20348]]></OSInfo>
+        <HostName><![CDATA[gutierrj-S22]]></HostName>
+        <NumberOfCores>4</NumberOfCores>
+        <TotalMemory>8191</TotalMemory>
+        <Locale><![CDATA[en-US]]></Locale>
+        <Timezone><![CDATA[GMT-0800 (Pacific Standard Time)]]></Timezone>
+        <User><![CDATA[corp\gutierrj]]></User>
+      </Environment>
+      <TestedApplication />
+      <ToolName>UFT Developer</ToolName>
+      <ToolVersion><![CDATA[2023.0]]></ToolVersion>
+      <Description> </Description>
+    </Data>
+    <ReportNode type="Assembly">
+      <Data>
+        <Name>UftDeveloperTestProject1</Name>
+        <Description><![CDATA[<pre>Version: 1.0.0.0</pre>]]></Description>
+        <StartTime>11/21/2024 4:55:47 PM</StartTime>
+        <Duration>14</Duration>
+        <Result>Failed</Result>
+        <Video></Video>
+        <ErrorText></ErrorText>
+        <Links></Links>
+        <Extension>
+          <Any>
+            <IconKey>Assembly</IconKey>
+            <IsHtmlErrorText>true</IsHtmlErrorText>
+          </Any>
+        </Extension>
+      </Data>
+      <ReportNode type="Namespace">
+        <Data>
+          <Name>UftDeveloperTestProject1</Name>
+          <Description><![CDATA[<pre></pre>]]></Description>
+          <StartTime>11/21/2024 4:55:47 PM</StartTime>
+          <Duration>14</Duration>
+          <Result>Failed</Result>
+          <Video></Video>
+          <ErrorText></ErrorText>
+          <Links></Links>
+          <Extension>
+            <Any>
+              <IconKey>Namespace</IconKey>
+              <IsHtmlErrorText>true</IsHtmlErrorText>
+            </Any>
+          </Extension>
+        </Data>
+        <ReportNode type="Class">
+          <Data>
+            <Name>UftDeveloperTest</Name>
+            <Description><![CDATA[<pre></pre>]]></Description>
+            <StartTime>11/21/2024 4:55:47 PM</StartTime>
+            <Duration>14</Duration>
+            <Result>Failed</Result>
+            <Video></Video>
+            <ErrorText></ErrorText>
+            <Links></Links>
+            <Extension>
+              <Any>
+                <IconKey>Class</IconKey>
+                <IsHtmlErrorText>true</IsHtmlErrorText>
+              </Any>
+            </Extension>
+          </Data>
+          <ReportNode type="Test">
+            <Data>
+              <Name><![CDATA[_010_OpenDatasheet]]></Name>
+              <Description><![CDATA[<pre></pre>]]></Description>
+              <StartTime>2024-11-21 16:55:47</StartTime>
+              <Duration>14</Duration>
+              <Result>Failed</Result>
+              <ErrorText><![CDATA[<b>Operation '_010_OpenDatasheet' failed:</b><BR/><pre>HP.LFT.SDK.ReplayItemNotFoundException: Cannot identify the specified item of the [ SysListView32 ] object. Confirm that the specified item is included in the object&apos;s item collection.
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuterBase.HandleReplayError(Int32 errorCode, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.HandleError(Action`2 onError, Int32 status, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.Send(String messageType, IDictionary`2 data, Action`2 onError)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuter.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectBase.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.ContainerHelper.ExecuteOnItemsCollection[TItem](TestObjectBase testobject, String firstItemAction, String restOfItemsAction, TItem[] items, Func`2 itemTransformation, Object[] firstActionArgs)
+   at HP.LFT.SDK.StdWin.ListBase`1.&lt;&gt;c__DisplayClass14_0.&lt;Select&gt;b__0()
+   at HP.LFT.SDK.OperationExecutionWrapper.&lt;&gt;c__DisplayClass19_0.&lt;ExecuteWithEvents&gt;b__0()
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEventsInternally[T](ITestObject testObject, Object additionalInfo, Func`1 innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(ITestObject testObject, Object additionalInfo, Action innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents[T1](Action innerAction, Action`1 originalMethod, T1 param1, Boolean reportOnlyOnError, ITestObject testObject, Object additionalInfo)
+   at HP.LFT.SDK.StdWin.ListBase`1.Select(Int32[] itemIndices)
+   at UftDeveloperTestProject1.UftDeveloperTest._010_OpenDatasheet() in C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\UftDeveloperTest.cs:line 318</pre>]]></ErrorText>
+              <Links></Links>
+              <Extension>
+                <Any>
+                  <IconKey>Test</IconKey>
+                  <IsHtmlErrorText>true</IsHtmlErrorText>
+                </Any>
+              </Extension>
+            </Data>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[Aspen Basic Engineering V15.Activate]]></Name>
+                <Description><![CDATA[]]></Description>
+                <StartTime>2024-11-21 16:55:48</StartTime>
+                <Duration>10</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Activate</Operation>
+                      <OperationData><![CDATA[]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[IsChildWindow]]></Name>
+                          <Value><![CDATA[false]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[IsOwnedWindow]]></Name>
+                          <Value><![CDATA[false]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[WindowClassRegExp]]></Name>
+                          <Value><![CDATA[Afx:]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[WindowTitleRegExp]]></Name>
+                          <Value><![CDATA[Aspen Basic Engineering V15]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>Window</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[SysTreeView32.Select]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>node</td><td class='ex-value'>\\gutierrj-S22.qae.aspentech.com\A1;All Datasheets</td></tr><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></Description>
+                <StartTime>2024-11-21 16:55:58</StartTime>
+                <Duration>2</Duration>
+                <Result>Passed</Result>
+                <ErrorText></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.TreeView</Type>
+                          <Name><![CDATA[SysTreeView32]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Select</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>node</td><td class='ex-value'>\\gutierrj-S22.qae.aspentech.com\A1;All Datasheets</td></tr><tr><td class='ex-name'>button</td><td class='ex-value'>Left</td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[NativeClass]]></Name>
+                          <Value><![CDATA[SysTreeView32]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[WindowId]]></Name>
+                          <Value><![CDATA[2]]></Value>
+                        </Property>
+                        <Property>
+                          <Name><![CDATA[Index]]></Name>
+                          <Value><![CDATA[0]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.TreeView</Type>
+                            <Name><![CDATA[SysTreeView32]]></Name>
+                            <IconKey><![CDATA[TreeView]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>TreeView</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+            <ReportNode type="Step">
+              <Data>
+                <Name><![CDATA[SysListView32.Select]]></Name>
+                <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>itemIndices</td><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr>[ 1 ]</tr></table></td></tr></table>]]></Description>
+                <StartTime>2024-11-21 16:56:00</StartTime>
+                <Duration>1</Duration>
+                <Result>Failed</Result>
+                <ErrorText><![CDATA[<b>Operation 'SysListView32.Select' failed:</b><BR/><pre>HP.LFT.SDK.ReplayItemNotFoundException: Cannot identify the specified item of the [ SysListView32 ] object. Confirm that the specified item is included in the object&apos;s item collection.
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuterBase.HandleReplayError(Int32 errorCode, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.HandleError(Action`2 onError, Int32 status, IDictionary`2 data)
+   at HP.LFT.SDK.Core.Communication.CommunicationClient.Send(String messageType, IDictionary`2 data, Action`2 onError)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectExecuter.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.Core.ClassModel.TestObjectBase.ExecuteMethod(String methodName, Object[] arguments)
+   at HP.LFT.SDK.ContainerHelper.ExecuteOnItemsCollection[TItem](TestObjectBase testobject, String firstItemAction, String restOfItemsAction, TItem[] items, Func`2 itemTransformation, Object[] firstActionArgs)
+   at HP.LFT.SDK.StdWin.ListBase`1.&lt;&gt;c__DisplayClass14_0.&lt;Select&gt;b__0()
+   at HP.LFT.SDK.OperationExecutionWrapper.&lt;&gt;c__DisplayClass19_0.&lt;ExecuteWithEvents&gt;b__0()
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEventsInternally[T](ITestObject testObject, Object additionalInfo, Func`1 innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents(ITestObject testObject, Object additionalInfo, Action innerAction, MethodBase methodInfo, Boolean reportOnlyOnError, Object[] arguments)
+   at HP.LFT.SDK.OperationExecutionWrapper.ExecuteWithEvents[T1](Action innerAction, Action`1 originalMethod, T1 param1, Boolean reportOnlyOnError, ITestObject testObject, Object additionalInfo)
+   at HP.LFT.SDK.StdWin.ListBase`1.Select(Int32[] itemIndices)
+   at UftDeveloperTestProject1.UftDeveloperTest._010_OpenDatasheet() in C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\UftDeveloperTest.cs:line 318</pre>]]></ErrorText>
+                <Links></Links>
+                <Extension>
+                  <Any>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                    <TestObject>
+                      <Path>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.Window</Type>
+                          <Name><![CDATA[Filter View: AllDatasheets]]></Name>
+                        </Object>
+                        <Object>
+                          <Type>Standard Windows.ListView</Type>
+                          <Name><![CDATA[SysListView32]]></Name>
+                        </Object>
+                      </Path>
+                      <Operation>Select</Operation>
+                      <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>itemIndices</td><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr>[ 1 ]</tr></table></td></tr></table>]]></OperationData>
+                      <Properties>
+                        <Property>
+                          <Name><![CDATA[NativeClass]]></Name>
+                          <Value><![CDATA[SysListView32]]></Value>
+                        </Property>
+                      </Properties>
+                    </TestObject>
+                    <HideContextInfo>true</HideContextInfo>
+                    <Descriptive>
+                      <TestObject>
+                        <Path>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Aspen Basic Engineering V15]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.Window</Type>
+                            <Name><![CDATA[Filter View: AllDatasheets]]></Name>
+                            <IconKey><![CDATA[Window]]></IconKey>
+                          </Object>
+                          <Object>
+                            <Type>Standard Windows.ListView</Type>
+                            <Name><![CDATA[SysListView32]]></Name>
+                            <IconKey><![CDATA[ListView]]></IconKey>
+                          </Object>
+                        </Path>
+                      </TestObject>
+                    </Descriptive>
+                    <IconKey>ListView</IconKey>
+                    <CustomUIElements>
+                      <DescriptionLabel>Data</DescriptionLabel>
+                    </CustomUIElements>
+                  </Any>
+                </Extension>
+              </Data>
+            </ReportNode>
+          </ReportNode>
+        </ReportNode>
+      </ReportNode>
+    </ReportNode>
+  </ReportNode>
+</Results>
