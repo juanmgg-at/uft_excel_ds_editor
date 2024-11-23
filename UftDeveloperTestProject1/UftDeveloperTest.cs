@@ -75,17 +75,19 @@ namespace UftDeveloperTestProject1
             MenuBarUiObject.SendKeys("c");
 
             
-            SelectClassDialogCreatePump.Activate();
+            SelectClassDialogCreateEquipment.Activate();
 
             
-            ListBoxCreatePump.Click();
+            ListBoxCreateEquipment.Click();
 
-            ListBoxCreatePump.Select("Centrifugal Pump");
+            ListBoxCreateEquipment.Select("Centrifugal Pump");
 
-            
-            OKButtonCreatePump.Click();
+
+            OKButtonCreateEquipment.Click();
 
         }
+
+        #region Launch Excel Datasheet Editor
 
 
         [TestMethod]
@@ -394,7 +396,7 @@ namespace UftDeveloperTestProject1
 
             SysListView32ListViewOpenDatasheet.Select(1);
 
-            SysListView32ListViewOpenDatasheet.SendKeys(HP.LFT.SDK.Keys.Return);
+            SysListView32ListViewOpenDatasheet.DoubleClick();
 
 
 
@@ -421,6 +423,192 @@ namespace UftDeveloperTestProject1
 
 
 
+        #endregion
+
+
+        #region Continuous List Datasheet
+
+        [TestMethod]
+        public void _011_CreateShellAndTubeHeatExchangers()
+        {
+            AspenBasicEngineeringV15Window.Activate();
+            
+            for (int i = 0; i < 4; i++)
+            {
+                SysTreeView32TreeView.Select("\\\\gutierrj-S22.qae.aspentech.com\\A1");
+
+                Thread.Sleep(1000);
+
+                SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
+                
+                MenuBarUiObject.SendKeys("c");
+                
+                SelectClassDialogCreateEquipment.Activate();
+                
+                ListBoxCreateEquipment.Select("Shell And Tube Heat Exchanger");
+                
+                OKButtonCreateEquipment.Click();
+            }
+        }
+
+
+
+        [TestMethod]
+        public void _012_CreateATContinuousListShellAndTubeExchangers()
+        {
+           
+            AspenBasicEngineeringV15Window.Activate();
+
+            
+            SysTreeView32TreeView.Select("\\\\gutierrj-S22.qae.aspentech.com\\A1");
+
+            SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
+
+            
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            
+            SelectDatasheetByTypeDialog.Activate();
+
+
+            ListBox.Click();
+
+            ListBox.Select("AT Continuous List Shell And Tube Heat Exchangers");
+
+
+            var OKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
+            {
+                NativeClass = @"Button",
+                Text = @"OK"
+            });
+
+            OKButton.Click();
+
+           
+            DatasheetDialog.Activate();
+            
+
+            SysTabControl32TabControl.Select("New");
+
+
+
+            SysListView32ListView.Click();
+
+            SysListView32ListView.Select("AT Continuous List Shell And Tube Heat Exchangers");
+
+            
+            OpenButton.Click();
+
+        }
+
+
+        [TestMethod]
+        public void _013_EditDatasheet()
+        {
+            //var h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow = Desktop.Describe<IWindow>(new WindowDescription
+            //{
+            //    IsChildWindow = false,
+            //    IsOwnedWindow = false,
+            //    WindowClassRegExp = @"XLMAIN",
+            //});
+
+            //var editEditField = h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow.Describe<IEditField>(new EditFieldDescription
+            //{
+            //    NativeClass = @"Edit"
+            //});
+            editEditField.Select(0, 3);
+
+            editEditField.SetText("Field1177");
+
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            //var h123ToH122ATContinuousListShellAndTubeHeatExchangersUiObject = h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow.Describe<IUiObject>(new UiObjectDescription
+            //{
+            //    WindowClassRegExp = @"EXCEL7"
+            //});
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");
+
+            //var eXCEL6UiObject = h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow.Describe<IUiObject>(new UiObjectDescription
+            //{
+            //    WindowClassRegExp = @"EXCEL6"
+            //});
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("2");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("2");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("3");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("3");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("4");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("4");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            editEditField.Select(0, 3);
+
+            editEditField.SetText("Field1169");
+
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("c");
+
+            eXCEL6UiObject.SendKeys("m");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            editEditField.Select(0, 9);
+
+            editEditField.SetText("Field1185");
+
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("r");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("t");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("d");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("e");
+
+            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+        }
+
+        #endregion
 
         [TestCleanup]
         public void TestCleanup()

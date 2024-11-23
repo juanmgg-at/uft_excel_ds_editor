@@ -90,7 +90,7 @@ namespace UftDeveloperTestProject1
             });
 
         // Create Centrifugal Pump 
-        public static IDialog SelectClassDialogCreatePump = AspenBasicEngineeringV15Window.Describe<IDialog>(new DialogDescription
+        public static IDialog SelectClassDialogCreateEquipment = AspenBasicEngineeringV15Window.Describe<IDialog>(new DialogDescription
         {
             IsChildWindow = false,
             IsOwnedWindow = true,
@@ -98,12 +98,13 @@ namespace UftDeveloperTestProject1
             Text = @"Select Class"
         });
 
-        public static IListBox ListBoxCreatePump = SelectClassDialogCreatePump.Describe<IListBox>(new ListBoxDescription
+        public static IListBox ListBoxCreateEquipment = SelectClassDialogCreateEquipment.Describe<IListBox>(new ListBoxDescription
         {
             NativeClass = @"ListBox"
         });
 
-        public static IButton OKButtonCreatePump = SelectClassDialogCreatePump.Describe<IButton>(new ButtonDescription
+        public static IButton OKButtonCreateEquipment 
+            = SelectClassDialogCreateEquipment.Describe<IButton>(new ButtonDescription
             {
                 NativeClass = @"Button",
                 Text = @"OK"
