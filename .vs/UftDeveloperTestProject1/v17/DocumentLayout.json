@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{B6CA7628-46C4-4689-BB40-AFB4B703CF95}|UftDeveloperTestProject1\\UftDeveloperTestProject1.csproj|solutionrelative:uftdevelopertestproject1\\uftdevelopertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B6CA7628-46C4-4689-BB40-AFB4B703CF95}|UftDeveloperTestProject1\\UftDeveloperTestProject1.csproj|c:\\users\\gutierrj\\source\\repos\\uftdevelopertestproject1\\uftdevelopertestproject1\\utilis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6CA7628-46C4-4689-BB40-AFB4B703CF95}|UftDeveloperTestProject1\\UftDeveloperTestProject1.csproj|solutionrelative:uftdevelopertestproject1\\utilis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6CA7628-46C4-4689-BB40-AFB4B703CF95}|UftDeveloperTestProject1\\UftDeveloperTestProject1.csproj|c:\\users\\gutierrj\\source\\repos\\uftdevelopertestproject1\\uftdevelopertestproject1\\environmentsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6CA7628-46C4-4689-BB40-AFB4B703CF95}|UftDeveloperTestProject1\\UftDeveloperTestProject1.csproj|solutionrelative:uftdevelopertestproject1\\environmentsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6687010-E98B-4246-845E-BB7C1C56BAC3}|Debug\\Debug.csproj|c:\\users\\gutierrj\\source\\repos\\uftdevelopertestproject1\\debug\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6687010-E98B-4246-845E-BB7C1C56BAC3}|Debug\\Debug.csproj|solutionrelative:debug\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\gutierrj\\source\\repos\\uftdevelopertestproject1\\uftdevelopertestproject1\\uiobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:uftdevelopertestproject1\\uiobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,20 +42,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utilis.cs",
+              "DocumentMoniker": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\UftDeveloperTestProject1\\Utilis.cs",
+              "RelativeDocumentMoniker": "UftDeveloperTestProject1\\Utilis.cs",
+              "ToolTip": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\UftDeveloperTestProject1\\Utilis.cs",
+              "RelativeToolTip": "UftDeveloperTestProject1\\Utilis.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAywBYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T15:28:35.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\Debug\\Program.cs",
+              "RelativeDocumentMoniker": "Debug\\Program.cs",
+              "ToolTip": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\Debug\\Program.cs",
+              "RelativeToolTip": "Debug\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T15:28:11.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnvironmentSettings.cs",
+              "DocumentMoniker": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\UftDeveloperTestProject1\\EnvironmentSettings.cs",
+              "RelativeDocumentMoniker": "UftDeveloperTestProject1\\EnvironmentSettings.cs",
+              "ToolTip": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\UftDeveloperTestProject1\\EnvironmentSettings.cs",
+              "RelativeToolTip": "UftDeveloperTestProject1\\EnvironmentSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T15:06:04.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UftDeveloperTest.cs",
               "DocumentMoniker": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\UftDeveloperTestProject1\\UftDeveloperTest.cs",
               "RelativeDocumentMoniker": "UftDeveloperTestProject1\\UftDeveloperTest.cs",
               "ToolTip": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\UftDeveloperTestProject1\\UftDeveloperTest.cs",
               "RelativeToolTip": "UftDeveloperTestProject1\\UftDeveloperTest.cs",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAAAPEAAAAAAAAA",
+              "ViewState": "AQIAAPQBAAAAAAAAAAAmwP0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T21:24:53.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UIObjects.cs",
               "DocumentMoniker": "C:\\Users\\gutierrj\\source\\repos\\UftDeveloperTestProject1\\UftDeveloperTestProject1\\UIObjects.cs",
               "RelativeDocumentMoniker": "UftDeveloperTestProject1\\UIObjects.cs",

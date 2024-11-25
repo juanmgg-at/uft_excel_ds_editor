@@ -17,5 +17,5 @@ C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1
 C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\obj\Debug\UftDeveloperTestProject1.csproj.CoreCompileInputs.cache
 C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\obj\Debug\UftDeveloperTestProject1.dll
 C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\obj\Debug\UftDeveloperTestProject1.pdb
-C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\obj\Debug\UftDeveloperTestProject1.csprojAssemblyReference.cache
-C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\obj\Debug\UftDeveloperTestProject1.csproj.CopyComplete
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\obj\Debug\UftDeveloperTestProject1.csproj.AssemblyReference.cache
+C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\obj\Debug\UftDevel.439FF52B.Up2Date

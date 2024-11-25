@@ -2,10 +2,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HP.LFT.SDK;
 using HP.LFT.SDK.StdWin;
-using HP.LFT.Verifications;
 using System.Net;
 
-//Librariews of objects
+//Libraries of objects
 using static UftDeveloperTestProject1.UIAProUIObjects;
 using static UftDeveloperTestProject1.StdWinUIObjects;
 
@@ -32,8 +31,10 @@ namespace UftDeveloperTestProject1
         [TestMethod]
         public void _0001_OpenWorkspace()
         {
-            
-           
+
+            string exePath = @"C:\Program Files\AspenTech\Basic Engineering V15.0\UserServices\bin\AZExplorer.exe";
+            Utilis.launchExe(exePath);
+
             OpenAspenBasicEngineeringV15WorkspaceDialog.Activate();
 
             
@@ -46,9 +47,7 @@ namespace UftDeveloperTestProject1
 
             SysTreeView32TreeViewOpenWorkspace.Click();
 
-            //sysTreeView32TreeView.Select("Aspen Basic Engineering Workspaces on (gutierrj-S22.qae.aspentech.com);A1 on gutierrj-S22.qae.aspentech.com");
 
-            //gutierrj-S22.qae.aspentech.com
 
             SysTreeView32TreeViewOpenWorkspace.Select($"Aspen Basic Engineering Workspaces on ({Dns.GetHostEntry(Environment.MachineName).HostName});{EnvironmentSetting.workspace} on {Dns.GetHostEntry(Environment.MachineName).HostName}");
 
@@ -63,16 +62,22 @@ namespace UftDeveloperTestProject1
         [TestMethod]
         public void _0002_CreateCentrifugalPump()
         {
-            
+
+            Thread.Sleep(1000);
+
             AspenBasicEngineeringV15Window.Activate();
 
 
-            SysTreeView32TreeView.Select("\\\\gutierrj-S22.qae.aspentech.com\\A1");
+            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
             SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
 
 
+            Thread.Sleep(1000);
+
             MenuBarUiObject.SendKeys("c");
+
+
 
             
             SelectClassDialogCreateEquipment.Activate();
@@ -104,7 +109,9 @@ namespace UftDeveloperTestProject1
 
             SysTreeView32TreeView.SendKeys("o", HP.LFT.SDK.KeyModifier.Alt);
 
-           
+
+            Thread.Sleep(1000);
+
             MenuBarUiObject.SendKeys("nf");
 
            
@@ -112,8 +119,7 @@ namespace UftDeveloperTestProject1
 
             EditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            //SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace};Datasheets");
-
+        
 
         }
 
@@ -130,7 +136,9 @@ namespace UftDeveloperTestProject1
 
             SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
 
-            
+
+            Thread.Sleep(1000);
+
             MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
             MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
@@ -219,9 +227,8 @@ namespace UftDeveloperTestProject1
             editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("m");
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("g");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
             eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
             eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
             eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
@@ -390,33 +397,13 @@ namespace UftDeveloperTestProject1
             Thread.Sleep(1000);
 
 
-            //Select  method never works 
+            //Select  method never works, only if you use Click method first
 
             SysListView32ListViewOpenDatasheet.Click();
 
             SysListView32ListViewOpenDatasheet.Select(1);
 
             SysListView32ListViewOpenDatasheet.DoubleClick();
-
-
-
-
-            //Thread.Sleep(1000);
-
-            //AspenBasicEngineeringV15Window.Activate();
-
-            //SysTreeView32TreeViewOpenDatasheet.Select("\\\\gutierrj-S22.qae.aspentech.com\\A1;All Datasheets");
-
-            //Thread.Sleep(1000);
-
-
-            //SysListView32ListViewOpenDatasheet.Click();
-            //for (int index = 0; index < SysListView32ListViewOpenDatasheet.Items.Count; index++)
-            //{
-            //    SysListView32ListViewOpenDatasheet.Select(1);
-            //}
-
-
 
 
         }
@@ -435,12 +422,15 @@ namespace UftDeveloperTestProject1
             
             for (int i = 0; i < 4; i++)
             {
-                SysTreeView32TreeView.Select("\\\\gutierrj-S22.qae.aspentech.com\\A1");
+                SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
                 Thread.Sleep(1000);
 
                 SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
-                
+
+
+                Thread.Sleep(1000);
+
                 MenuBarUiObject.SendKeys("c");
                 
                 SelectClassDialogCreateEquipment.Activate();
@@ -456,15 +446,22 @@ namespace UftDeveloperTestProject1
         [TestMethod]
         public void _012_CreateATContinuousListShellAndTubeExchangers()
         {
-           
+
+
+            Thread.Sleep(1000);
+
             AspenBasicEngineeringV15Window.Activate();
 
-            
-            SysTreeView32TreeView.Select("\\\\gutierrj-S22.qae.aspentech.com\\A1");
+
+            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
+
+            Thread.Sleep(1000);
 
             SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
 
-            
+
+            Thread.Sleep(1000);
+
             MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
             MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
@@ -515,33 +512,17 @@ namespace UftDeveloperTestProject1
         [TestMethod]
         public void _013_EditDatasheet()
         {
-            //var h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow = Desktop.Describe<IWindow>(new WindowDescription
-            //{
-            //    IsChildWindow = false,
-            //    IsOwnedWindow = false,
-            //    WindowClassRegExp = @"XLMAIN",
-            //});
-
-            //var editEditField = h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow.Describe<IEditField>(new EditFieldDescription
-            //{
-            //    NativeClass = @"Edit"
-            //});
+            
             editEditField.Select(0, 3);
 
             editEditField.SetText("Field1177");
 
             editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            //var h123ToH122ATContinuousListShellAndTubeHeatExchangersUiObject = h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow.Describe<IUiObject>(new UiObjectDescription
-            //{
-            //    WindowClassRegExp = @"EXCEL7"
-            //});
+            
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");
 
-            //var eXCEL6UiObject = h123ToH122ATContinuousListShellAndTubeHeatExchangersDeWindow.Describe<IUiObject>(new UiObjectDescription
-            //{
-            //    WindowClassRegExp = @"EXCEL6"
-            //});
+            
             eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");

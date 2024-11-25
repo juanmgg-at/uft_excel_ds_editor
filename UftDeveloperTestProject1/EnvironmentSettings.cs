@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Net;
 
 
@@ -14,9 +15,13 @@ namespace UftDeveloperTestProject1
 
             #region Aspen Basic Engineering Workspace Login Information
             //Workspace
-            public const string workspace = "A1";
+            public const string workspace = "A2";
 
-            #endregion
-        }
-    
+        #endregion
+
+        #region General variables 
+        public const string pathToLogFile = @"C:\Users\gutierrj\source\repos\UftDeveloperTestProject1\UftDeveloperTestProject1\log.txt";
+        #endregion
+    }
+
 }

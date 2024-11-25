@@ -79,6 +79,7 @@
     <Compile Include="UftDeveloperTest.cs" />
     <Compile Include="UIAProUIObjects.cs" />
     <Compile Include="UnitTestClassBase.cs" />
+    <Compile Include="Utilis.cs" />
     <None Include="App.config" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
