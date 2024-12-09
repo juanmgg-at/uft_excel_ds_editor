@@ -28,398 +28,412 @@ namespace UftDeveloperTestProject1
         }
 
 
-        [TestMethod]
-        public void _0001_OpenWorkspace()
-        {
-
-            string exePath = @"C:\Program Files\AspenTech\Basic Engineering V15.0\UserServices\bin\AZExplorer.exe";
-            Utilis.launchExe(exePath);
-
-            OpenAspenBasicEngineeringV15WorkspaceDialog.Activate();
-
-            
-            cONNECTIONButton.Click();
-
-            
-            BrowseButton.Click();
-
-            
-
-            SysTreeView32TreeViewOpenWorkspace.Click();
-
-
-
-            SysTreeView32TreeViewOpenWorkspace.Select($"Aspen Basic Engineering Workspaces on ({Dns.GetHostEntry(Environment.MachineName).HostName});{EnvironmentSetting.workspace} on {Dns.GetHostEntry(Environment.MachineName).HostName}");
-
-            
-            OKButtonOpenWorkspace.Click();
-
-            
-            OpenButtonOpenWorkspace.Click();
-
-        }
-
-        [TestMethod]
-        public void _0002_CreateCentrifugalPump()
-        {
-
-            Thread.Sleep(1000);
-
-            AspenBasicEngineeringV15Window.Activate();
-
-
-            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
-
-            SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
-
-
-            Thread.Sleep(1000);
-
-            MenuBarUiObject.SendKeys("c");
-
-
-
-            
-            SelectClassDialogCreateEquipment.Activate();
-
-            
-            ListBoxCreateEquipment.Click();
-
-            ListBoxCreateEquipment.Select("Centrifugal Pump");
-
-
-            OKButtonCreateEquipment.Click();
-
-        }
-
         #region Launch Excel Datasheet Editor
 
+        //[TestMethod]
+        //public void _0001_OpenWorkspace()
+        //{
 
-        [TestMethod]
-        public void _001_CreateDatasheetsFolder()
-        {
+        //    string exePath = @"C:\Program Files\AspenTech\Basic Engineering V15.0\UserServices\bin\AZExplorer.exe";
+        //    Utilis.launchExe(exePath);
 
-            Thread.Sleep(1000);
+        //    OpenAspenBasicEngineeringV15WorkspaceDialog.Activate();
 
-            
-            AspenBasicEngineeringV15Window.Activate();
 
-            
-            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
+        //    cONNECTIONButton.Click();
 
-            SysTreeView32TreeView.SendKeys("o", HP.LFT.SDK.KeyModifier.Alt);
 
+        //    BrowseButton.Click();
 
-            Thread.Sleep(1000);
 
-            MenuBarUiObject.SendKeys("nf");
 
-           
-            EditEditField.SetText("Datasheets");
+        //    SysTreeView32TreeViewOpenWorkspace.Click();
 
-            EditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-        
 
-        }
+        //    SysTreeView32TreeViewOpenWorkspace.Select($"Aspen Basic Engineering Workspaces on ({Dns.GetHostEntry(Environment.MachineName).HostName});{EnvironmentSetting.workspace} on {Dns.GetHostEntry(Environment.MachineName).HostName}");
 
 
-        [TestMethod]
-        public void _002_CreateDatasheet()
-        {
-            Thread.Sleep(1000);
+        //    OKButtonOpenWorkspace.Click();
 
-            AspenBasicEngineeringV15Window.Activate();
 
-            
-            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
+        //    OpenButtonOpenWorkspace.Click();
 
-            SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
+        //}
 
+        //[TestMethod]
+        //public void _0002_CreateCentrifugalPump()
+        //{
 
-            Thread.Sleep(1000);
+        //    Thread.Sleep(1000);
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+        //    AspenBasicEngineeringV15Window.Activate();
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+        //    SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+        //    SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+        //    Thread.Sleep(1000);
 
-            
+        //    MenuBarUiObject.SendKeys("c");
 
-            ListBox.Select("AZ Centrifugal Pump 1");
 
-            var OKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
-            {
-                NativeClass = @"Button",
-                Text = @"OK"
-            });
 
-            OKButton.Click();
 
-            
-            DatasheetDialog.Activate();
+        //    SelectClassDialogCreateEquipment.Activate();
 
-            
-            SysTabControl32TabControl.Select("New");
 
-           
-            SysListView32ListView.Select(1);
+        //    ListBoxCreateEquipment.Click();
 
-            
-            OpenButton.Click();
+        //    ListBoxCreateEquipment.Select("Centrifugal Pump");
 
 
-        }
+        //    OKButtonCreateEquipment.Click();
 
-        
+        //}
 
-        [TestMethod]
-        public void _003_ModifyCapacityNormal()
-        {
 
-            Thread.Sleep(1000);
 
-            AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
+        //[TestMethod]
+        //public void _001_CreateDatasheetsFolder()
+        //{
 
-            editEditField.Select(0, 9);
+        //    Thread.Sleep(1000);
 
-            Thread.Sleep(5000);
 
-            editEditField.SetText("field90");
+        //    AspenBasicEngineeringV15Window.Activate();
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            Thread.Sleep(1000);
+        //    SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("l/h");
+        //    SysTreeView32TreeView.SendKeys("o", HP.LFT.SDK.KeyModifier.Alt);
 
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+        //    Thread.Sleep(1000);
 
+        //    MenuBarUiObject.SendKeys("nf");
 
 
-            editEditField.Select(0, 9);
+        //    EditEditField.SetText("Datasheets");
 
-            Thread.Sleep(1000);
+        //    EditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            editEditField.SetText("field78");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("100");
+        //}
 
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+        //[TestMethod]
+        //public void _002_CreateDatasheet()
+        //{
+        //    Thread.Sleep(1000);
 
-            editEditField.Select(0, 9);
+        //    AspenBasicEngineeringV15Window.Activate();
 
-            editEditField.SetText("field90");
 
-            Thread.Sleep(1000);
+        //    SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+        //    SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
 
 
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("g");
+        //    Thread.Sleep(1000);
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
+        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
+        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
+        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-        }
+        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
-        [TestMethod]
-        public void _004_CheckPumpTypeRadioButton()
-        {
 
-            Thread.Sleep(1000);
 
-            editEditField.Select(0, 9);
+        //    ListBox.Select("AZ Centrifugal Pump 1");
 
-            editEditField.SetText("field260");
+        //    var OKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
+        //    {
+        //        NativeClass = @"Button",
+        //        Text = @"OK"
+        //    });
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+        //    OKButton.Click();
 
-            Thread.Sleep(1000);
 
-            field260CImage.Click();
-            field264CImage.Click();
-            field264CImage.Click();
+        //    DatasheetDialog.Activate();
 
 
-        }
+        //    SysTabControl32TabControl.Select("New");
 
-        [TestMethod]
-        public void _005_CheckGlanTapsCheckBox()
-        {
 
-            Thread.Sleep(1000);
-           
+        //    SysListView32ListView.Select(1);
 
-            editEditField.Select(0, 9);
 
-            editEditField.SetText("field433");
+        //    OpenButton.Click();
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
+        //}
 
-            Thread.Sleep(1000);
 
-            Field433CImage.Click();
-            Field434CImage.Click();
-            Field434CImage.Click();
 
-        }
+        //[TestMethod]
+        //public void _003_ModifyCapacityNormal()
+        //{
 
+        //    Thread.Sleep(1000);
 
-        //[TestMethod] 
-        public void _006_EnterLongRemark()
-        {
+        //    DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
 
-            Thread.Sleep(5000);
+        //    editEditField.Select(0, 9);
 
-            AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
+        //    Thread.Sleep(5000);
 
-            editEditField.Select(0, 9);
+        //    editEditField.SetText("field90");
 
-         
 
-            editEditField.SetText("field561");
+        //    editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
+        //    Thread.Sleep(1000);
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+        //    AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("l/h");
 
-            
 
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse quam enim, faucibus non aliquam aliquet, tempor vitae libero.Vivamus faucibus in risus ac semper.Suspendisse et erat in lorem dapibus facilisis.Vestibulum lobortis a erat eu varius.Nulla placerat viverra fringilla.Nam auctor vehicula sem.Duis laoreet quam nec sem consectetur, aliquam interdum arcu bibendum.Donec vel tincidunt metus, nec sagittis purus.In id eros ac nulla eleifend varius.Generados 1 párrafos, 69 palabras, 467 bytes de Lorem");
 
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
+        //    editEditField.Select(0, 9);
 
+        //    Thread.Sleep(1000);
 
+        //    editEditField.SetText("field78");
 
-        }
+        //    editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-        [TestMethod]
-        public void _007_ClickNonWitCheckbox()
-        {
+        //    AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("100");
 
-            Thread.Sleep(1000);
 
-            editEditField.Select(0, 3);
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
-            Thread.Sleep(1000);
+        //    editEditField.Select(0, 9);
 
-            editEditField.SetText("field699");
+        //    editEditField.SetText("field90");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+        //    Thread.Sleep(1000);
 
-            Field669CImage.Click();
+        //    editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
-        }
+        //    AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("g");
 
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-        [TestMethod]
-        public void _008_CloseDatasheetEditor()
-        {
 
-            Thread.Sleep(1000);
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow.Close();
 
 
-        }
+        //}
 
+        //[TestMethod]
+        //public void _004_CheckPumpTypeRadioButton()
+        //{
 
-        [TestMethod]
-        public void _009_AddDatasheetToFolder()
-        {
+        //    Thread.Sleep(1000);
 
-            Thread.Sleep(1000);
-            
-            AspenBasicEngineeringV15Window.Activate();
+        //    editEditField.Select(0, 9);
 
-            
-            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace};Datasheets");
+        //    editEditField.SetText("field260");
 
+        //    editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            Thread.Sleep(1000);
+        //    Thread.Sleep(1000);
 
-            SysTreeView32TreeView.SendKeys("o", HP.LFT.SDK.KeyModifier.Alt);
-            
-            MenuBarUiObject.SendKeys("t");
+        //    field260CImage.Click();
+        //    field264CImage.Click();
+        //    field264CImage.Click();
 
 
-            Thread.Sleep(1000);
+        //}
 
-            SelectDatasheetDialog.Activate();
-            
-            ListBoxAddDatasheet.Select(1);
+        //[TestMethod]
+        //public void _005_CheckGlanTapsCheckBox()
+        //{
 
-            var OKButton = SelectDatasheetDialog.Describe<IButton>(new ButtonDescription
-            {
-                NativeClass = @"Button",
-                Text = @"OK"
-            });
-            
-            OKButton.Click();
+        //    Thread.Sleep(1000);
 
-        }
 
+        //    editEditField.Select(0, 9);
 
-        [TestMethod]
-        public void _010_OpenDatasheet()
-        {
+        //    editEditField.SetText("field433");
 
-            Thread.Sleep(1000);
-            
-            AspenBasicEngineeringV15Window.Activate();
-            
-            SysTreeView32TreeViewOpenDatasheet.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace};All Datasheets");
+        //    editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            Thread.Sleep(1000);
 
+        //    Thread.Sleep(1000);
 
-            //Select  method never works, only if you use Click method first
+        //    Field433CImage.Click();
+        //    Field434CImage.Click();
+        //    Field434CImage.Click();
 
-            SysListView32ListViewOpenDatasheet.Click();
+        //}
 
-            SysListView32ListViewOpenDatasheet.Select(1);
 
-            SysListView32ListViewOpenDatasheet.DoubleClick();
+        ////[TestMethod]
+        //public void _006_EnterLongRemark()
+        //{
 
+        //    Thread.Sleep(5000);
 
-        }
+        //    DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
 
+        //    var comboBox = DesignDatasheetXlsmUserNameCWindow
+        //    .Describe<IComboBox>(new ComboBoxDescription
+        //    {
+        //        NativeClass = @"ComboBox"
+        //    });
 
+        //    comboBox.Click();
 
+        //    editEditField.SetText("field561");
+
+
+        //    editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+
+
+        //    AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse quam enim, faucibus non aliquam aliquet, tempor vitae libero.Vivamus faucibus in risus ac semper.Suspendisse et erat in lorem dapibus facilisis.Vestibulum lobortis a erat eu varius.Nulla placerat viverra fringilla.Nam auctor vehicula sem.Duis laoreet quam nec sem consectetur, aliquam interdum arcu bibendum.Donec vel tincidunt metus, nec sagittis purus.In id eros ac nulla eleifend varius.");
+
+
+        //    eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+
+
+
+
+        //}
+
+        //[TestMethod]
+        //public void _007_ClickNonWitCheckbox()
+        //{
+
+        //    Thread.Sleep(1000);
+
+        //    editEditField.Select(0, 3);
+
+
+        //    Thread.Sleep(1000);
+
+        //    editEditField.SetText("field699");
+
+        //    editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+        //    Field669CImage.Click();
+
+
+        //}
+
+
+        //[TestMethod]
+        //public void _008_CloseDatasheetEditor()
+        //{
+
+        //    Thread.Sleep(1000);
+
+        //    DesignDatasheetXlsmUserNameCWindow.Close();
+
+
+        //}
+
+
+        //[TestMethod]
+        //public void _009_AddDatasheetToFolder()
+        //{
+
+        //    Thread.Sleep(1000);
+
+        //    AspenBasicEngineeringV15Window.Activate();
+
+
+        //    SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace};Datasheets");
+
+
+        //    Thread.Sleep(1000);
+
+        //    SysTreeView32TreeView.SendKeys("o", HP.LFT.SDK.KeyModifier.Alt);
+
+        //    MenuBarUiObject.SendKeys("t");
+
+
+        //    Thread.Sleep(1000);
+
+        //    SelectDatasheetDialog.Activate();
+
+        //    ListBoxAddDatasheet.Select(1);
+
+        //    var OKButton = SelectDatasheetDialog.Describe<IButton>(new ButtonDescription
+        //    {
+        //        NativeClass = @"Button",
+        //        Text = @"OK"
+        //    });
+
+        //    OKButton.Click();
+
+        //}
+
+
+        //[TestMethod]
+        //public void _010_OpenDatasheet()
+        //{
+
+        //    Thread.Sleep(1000);
+
+        //    AspenBasicEngineeringV15Window.Activate();
+
+        //    SysTreeView32TreeViewOpenDatasheet.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace};All Datasheets");
+
+        //    Thread.Sleep(1000);
+
+
+        //    //Select  method never works, only if you use Click method first
+
+        //    SysListView32ListViewOpenDatasheet.Click();
+
+        //    SysListView32ListViewOpenDatasheet.Select(1);
+
+        //    Thread.Sleep(1000);
+
+        //    SysListView32ListViewOpenDatasheet.DoubleClick();
+
+
+        //    DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
+
+        //    DesignDatasheetXlsmUserNameCWindow.Activate();
+
+        //}
         #endregion
 
-
-        #region Continuous List Datasheet
+        //#region Continuous List Datasheet
 
         [TestMethod]
         public void _011_CreateShellAndTubeHeatExchangers()
         {
+
+            Thread.Sleep(1000);
+            //AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow.Close();
+
             AspenBasicEngineeringV15Window.Activate();
-            
+
             for (int i = 0; i < 4; i++)
             {
                 SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
@@ -432,11 +446,11 @@ namespace UftDeveloperTestProject1
                 Thread.Sleep(1000);
 
                 MenuBarUiObject.SendKeys("c");
-                
+
                 SelectClassDialogCreateEquipment.Activate();
-                
+
                 ListBoxCreateEquipment.Select("Shell And Tube Heat Exchanger");
-                
+
                 OKButtonCreateEquipment.Click();
             }
         }
@@ -474,7 +488,7 @@ namespace UftDeveloperTestProject1
 
             MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            
+
             SelectDatasheetByTypeDialog.Activate();
 
 
@@ -491,9 +505,9 @@ namespace UftDeveloperTestProject1
 
             OKButton.Click();
 
-           
+
             DatasheetDialog.Activate();
-            
+
 
             SysTabControl32TabControl.Select("New");
 
@@ -503,7 +517,7 @@ namespace UftDeveloperTestProject1
 
             SysListView32ListView.Select("AT Continuous List Shell And Tube Heat Exchangers");
 
-            
+
             OpenButton.Click();
 
         }
@@ -512,17 +526,27 @@ namespace UftDeveloperTestProject1
         [TestMethod]
         public void _013_EditDatasheet()
         {
-            
-            editEditField.Select(0, 3);
+
+            Thread.Sleep(4000);
+
+            //editEditField.Select(0, 8);
+
+            var comboBox = DesignDatasheetXlsmUserNameCWindow
+            .Describe<IComboBox>(new ComboBoxDescription
+            {
+                NativeClass = @"ComboBox"
+            });
+
+            comboBox.Click();
 
             editEditField.SetText("Field1177");
 
             editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            
+
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");
 
-            
+
             eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");
@@ -589,7 +613,7 @@ namespace UftDeveloperTestProject1
 
         }
 
-        #endregion
+        //#endregion
 
         [TestCleanup]
         public void TestCleanup()

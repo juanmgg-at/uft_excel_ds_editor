@@ -194,7 +194,7 @@ namespace UftDeveloperTestProject1
 
         #region  Excel UI elements
 
-        public static IWindow AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow = Desktop.Describe<IWindow>(new WindowDescription
+        public static IWindow DesignDatasheetXlsmUserNameCWindow = Desktop.Describe<IWindow>(new WindowDescription
         {
             IsChildWindow = false,
             IsOwnedWindow = false,
@@ -202,19 +202,19 @@ namespace UftDeveloperTestProject1
 
         });
 
-        public static IEditField editEditField = AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow.Describe<IEditField>(new EditFieldDescription
+        public static IEditField editEditField = DesignDatasheetXlsmUserNameCWindow.Describe<IEditField>(new EditFieldDescription
         {
             NativeClass = @"Edit"
         });
 
 
-        public static IUiObject AZCentrifugalPump1DesignDatasheetXlsmUiObject = AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow.Describe<IUiObject>(new UiObjectDescription
+        public static IUiObject AZCentrifugalPump1DesignDatasheetXlsmUiObject = DesignDatasheetXlsmUserNameCWindow.Describe<IUiObject>(new UiObjectDescription
         {
             WindowClassRegExp = @"EXCEL7"
         });
 
 
-        public static IUiObject eXCEL6UiObject = AZCentrifugalPump1DesignDatasheetXlsmUserNameCWindow.Describe<IUiObject>(new UiObjectDescription
+        public static IUiObject eXCEL6UiObject = DesignDatasheetXlsmUserNameCWindow.Describe<IUiObject>(new UiObjectDescription
         {
             WindowClassRegExp = @"EXCEL6"
         });

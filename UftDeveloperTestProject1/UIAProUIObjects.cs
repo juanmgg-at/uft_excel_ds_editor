@@ -59,10 +59,40 @@ namespace UftDeveloperTestProject1
                 ControlType = @"Pane",
             });
 
-        #endregion 
+        #endregion
+
+
+        #region Page 1 
+
+        public static IPane PanePage1 = NestedPane
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Sheet Page 1",
+                Path = @"Window;Pane;Custom;Pane;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection", @"Selection2", @"SelectionItem" },
+                FrameworkId = string.Empty,
+                ControlType = @"Pane",
+                AutomationId = @"Page 1"
+            });
+
+        public static IImage field78CImage = PanePage1
+            .Describe<IImage>(new ImageDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Field78-C",
+                Path = @"Window;Pane;Custom;Pane;Pane;Image",
+                SupportedPatterns = new string[] { @"Invoke", @"LegacyIAccessible", @"SelectionItem" },
+                FrameworkId = string.Empty,
+                ControlType = @"Image",
+                AutomationId = string.Empty
+            });
+
+        #endregion
+
 
         #region Page 2
-        
+
 
         public static IPane PanePage2 = NestedPane
             .Describe<IPane>(new PaneDescription
@@ -165,7 +195,9 @@ namespace UftDeveloperTestProject1
             ControlType = @"Image",
             AutomationId = string.Empty
         });
-        
+
         #endregion
+
+
     }
 }

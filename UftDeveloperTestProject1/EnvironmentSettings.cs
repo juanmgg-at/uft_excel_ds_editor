@@ -15,7 +15,7 @@ namespace UftDeveloperTestProject1
 
             #region Aspen Basic Engineering Workspace Login Information
             //Workspace
-            public const string workspace = "A2";
+            public const string workspace = "A7";
 
         #endregion
 
