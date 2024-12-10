@@ -74,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="EnvironmentSettings.cs" />
     <Compile Include="StdWinUIObjects.cs" />
     <Compile Include="UftDeveloperTest1.cs" />

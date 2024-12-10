@@ -170,7 +170,6 @@ namespace ExcelDatasheetEditorUFTProject
             .Describe<IUiObject>(new UiObjectDescription
             {
                 ProcessName = @"EXCEL",
-                Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm",
                 Path = @"Window;Pane;Custom",
                 SupportedPatterns = new string[] { @"LegacyIAccessible" },
                 FrameworkId = @"Win32",
@@ -180,12 +179,10 @@ namespace ExcelDatasheetEditorUFTProject
             .Describe<IPane>(new PaneDescription
             {
                 ProcessName = @"EXCEL",
-                Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15))",
                 Path = @"Window;Pane;Custom;Pane",
                 SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection" },
                 FrameworkId = string.Empty,
                 ControlType = @"Pane",
-                AutomationId = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm"
             })
             .Describe<IPane>(new PaneDescription
             {
@@ -252,7 +249,7 @@ namespace ExcelDatasheetEditorUFTProject
         public static IGridItem i23GridItem = Desktop.Describe<IWindow>(new WindowDescription
         {
             ProcessName = @"EXCEL",
-            Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm - UserName: CORP\gutierrj Server: \\ABE-Automation.qae.aspentech.com\A8",
+            
             Path = @"Window",
             SupportedPatterns = new string[] { @"LegacyIAccessible", @"Transform", @"Window" },
             FrameworkId = @"Win32",
@@ -273,7 +270,6 @@ namespace ExcelDatasheetEditorUFTProject
                     .Describe<IUiObject>(new UiObjectDescription
                     {
                         ProcessName = @"EXCEL",
-                        Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm",
                         Path = @"Window;Pane;Custom",
                         SupportedPatterns = new string[] { @"LegacyIAccessible" },
                         FrameworkId = @"Win32",
@@ -283,12 +279,10 @@ namespace ExcelDatasheetEditorUFTProject
                     .Describe<IPane>(new PaneDescription
                     {
                         ProcessName = @"EXCEL",
-                        Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15))",
                         Path = @"Window;Pane;Custom;Pane",
                         SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection" },
                         FrameworkId = string.Empty,
                         ControlType = @"Pane",
-                        AutomationId = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm"
                     })
                     .Describe<IPane>(new PaneDescription
                     {
@@ -320,6 +314,76 @@ namespace ExcelDatasheetEditorUFTProject
                         ControlType = @"DataItem",
                         AutomationId = @"I23"
                     });
+
+        public static IGridItem k23GridItem = Desktop.Describe<IWindow>(new WindowDescription
+        {
+            ProcessName = @"EXCEL",
+            Path = @"Window",
+            SupportedPatterns = new string[] { @"LegacyIAccessible", @"Transform", @"Window" },
+            FrameworkId = @"Win32",
+            ControlType = @"Window",
+            AutomationId = string.Empty
+        })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = string.Empty,
+                Path = @"Window;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                FrameworkId = @"Win32",
+                ControlType = @"Pane",
+                AutomationId = string.Empty,
+                Index = 3
+            })
+            .Describe<IUiObject>(new UiObjectDescription
+            {
+                ProcessName = @"EXCEL",
+                Path = @"Window;Pane;Custom",
+                SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                FrameworkId = @"Win32",
+                ControlType = @"Custom",
+                AutomationId = string.Empty
+            })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Path = @"Window;Pane;Custom;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection" },
+                FrameworkId = string.Empty,
+                ControlType = @"Pane",
+            })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Sheet Page 1",
+                Path = @"Window;Pane;Custom;Pane;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection", @"Selection2", @"SelectionItem" },
+                FrameworkId = string.Empty,
+                ControlType = @"Pane",
+                AutomationId = @"Page 1"
+            })
+            .Describe<IGrid>(new GridDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Grid",
+                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid",
+                SupportedPatterns = new string[] { @"Grid", @"LegacyIAccessible" },
+                FrameworkId = string.Empty,
+                ControlType = @"DataGrid",
+                AutomationId = @"Grid"
+            })
+            .Describe<IGridItem>(new GridItemDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"K23",
+                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid;DataItem",
+                SupportedPatterns = new string[] { @"GridItem", @"Invoke", @"LegacyIAccessible", @"SelectionItem", @"Text", @"Value" },
+                FrameworkId = string.Empty,
+                ControlType = @"DataItem",
+                AutomationId = @"K23"
+            });
+
+
         #endregion
 
         #region Page 2 

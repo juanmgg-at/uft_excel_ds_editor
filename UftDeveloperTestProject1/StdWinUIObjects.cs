@@ -202,6 +202,12 @@ namespace ExcelDatasheetEditorUFTProject
 
         });
 
+        public static IComboBox selectFieldComboBox = DesignDatasheetXlsmUserNameCWindow
+        .Describe<IComboBox>(new ComboBoxDescription
+        {
+            NativeClass = @"ComboBox"
+        });
+
         public static IEditField editEditField = DesignDatasheetXlsmUserNameCWindow.Describe<IEditField>(new EditFieldDescription
         {
             NativeClass = @"Edit"

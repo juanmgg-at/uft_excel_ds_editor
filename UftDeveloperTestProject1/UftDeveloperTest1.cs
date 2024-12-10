@@ -8,6 +8,9 @@ using System.Net;
 using static ExcelDatasheetEditorUFTProject.UIAProUIObjects;
 using static ExcelDatasheetEditorUFTProject.StdWinUIObjects;
 
+// Library with constant values 
+using static ExcelDatasheetEditorUFTProject.Constants;
+
 using System.Threading;
 using HP.LFT.Verifications;
 
@@ -31,152 +34,152 @@ namespace ExcelDatasheetEditorUFTProject
 
         #region Launch Excel Datasheet Editor
 
-        //[TestMethod]
-        //public void _0001_OpenWorkspace()
-        //{
+        [TestMethod]
+        public void _0001_OpenWorkspace()
+        {
 
-        //    string exePath = @"C:\Program Files\AspenTech\Basic Engineering V15.0\UserServices\bin\AZExplorer.exe";
-        //    Utilis.launchExe(exePath);
+            string exePath = @"C:\Program Files\AspenTech\Basic Engineering V15.0\UserServices\bin\AZExplorer.exe";
+            Utilis.launchExe(exePath);
 
-        //    OpenAspenBasicEngineeringV15WorkspaceDialog.Activate();
+            OpenAspenBasicEngineeringV15WorkspaceDialog.Activate();
 
 
-        //    cONNECTIONButton.Click();
+            cONNECTIONButton.Click();
 
 
-        //    BrowseButton.Click();
+            BrowseButton.Click();
 
 
-        //    SysTreeView32TreeViewOpenWorkspace.Click();
+            SysTreeView32TreeViewOpenWorkspace.Click();
 
 
-        //    SysTreeView32TreeViewOpenWorkspace.Select($"Aspen Basic Engineering Workspaces on ({Dns.GetHostEntry(Environment.MachineName).HostName});{EnvironmentSetting.workspace} on {Dns.GetHostEntry(Environment.MachineName).HostName}");
+            SysTreeView32TreeViewOpenWorkspace.Select($"Aspen Basic Engineering Workspaces on ({Dns.GetHostEntry(Environment.MachineName).HostName});{EnvironmentSetting.workspace} on {Dns.GetHostEntry(Environment.MachineName).HostName}");
 
 
-        //    OKButtonOpenWorkspace.Click();
+            OKButtonOpenWorkspace.Click();
 
 
-        //    OpenButtonOpenWorkspace.Click();
+            OpenButtonOpenWorkspace.Click();
 
-        //}
+        }
 
-        //[TestMethod]
-        //public void _0002_CreateCentrifugalPump()
-        //{
+        [TestMethod]
+        public void _0002_CreateCentrifugalPump()
+        {
 
-        //    Thread.Sleep(1000);
+            Thread.Sleep(1000);
 
-        //    AspenBasicEngineeringV15Window.Activate();
+            AspenBasicEngineeringV15Window.Activate();
 
 
-        //    SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
+            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
-        //    SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
+            SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
 
 
-        //    Thread.Sleep(1000);
+            Thread.Sleep(1000);
 
-        //    MenuBarUiObject.SendKeys("c");
+            MenuBarUiObject.SendKeys("c");
 
 
 
 
-        //    SelectClassDialogCreateEquipment.Activate();
+            SelectClassDialogCreateEquipment.Activate();
 
 
-        //    ListBoxCreateEquipment.Click();
+            ListBoxCreateEquipment.Click();
 
-        //    ListBoxCreateEquipment.Select("Centrifugal Pump");
+            ListBoxCreateEquipment.Select("Centrifugal Pump");
 
 
-        //    OKButtonCreateEquipment.Click();
+            OKButtonCreateEquipment.Click();
 
-        //}
+        }
 
 
 
-        //[TestMethod]
-        //public void _001_CreateDatasheetsFolder()
-        //{
+        [TestMethod]
+        public void _001_CreateDatasheetsFolder()
+        {
 
-        //    Thread.Sleep(1000);
+            Thread.Sleep(1000);
 
 
-        //    AspenBasicEngineeringV15Window.Activate();
+            AspenBasicEngineeringV15Window.Activate();
 
 
-        //    SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
+            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
-        //    SysTreeView32TreeView.SendKeys("o", HP.LFT.SDK.KeyModifier.Alt);
+            SysTreeView32TreeView.SendKeys("o", HP.LFT.SDK.KeyModifier.Alt);
 
 
-        //    Thread.Sleep(1000);
+            Thread.Sleep(1000);
 
-        //    MenuBarUiObject.SendKeys("nf");
+            MenuBarUiObject.SendKeys("nf");
 
 
-        //    EditEditField.SetText("Datasheets");
+            EditEditField.SetText("Datasheets");
 
-        //    EditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            EditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
 
-        //}
+        }
 
 
-        //[TestMethod]
-        //public void _002_CreateDatasheet()
-        //{
-        //    Thread.Sleep(1000);
+        [TestMethod]
+        public void _002_CreateDatasheet()
+        {
+            Thread.Sleep(1000);
 
-        //    AspenBasicEngineeringV15Window.Activate();
+            AspenBasicEngineeringV15Window.Activate();
 
 
-        //    SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
+            SysTreeView32TreeView.Select($@"\\{Dns.GetHostEntry(Environment.MachineName).HostName}\{EnvironmentSetting.workspace}");
 
-        //    SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
+            SysTreeView32TreeView.SendKeys("b", HP.LFT.SDK.KeyModifier.Alt);
 
 
-        //    Thread.Sleep(1000);
+            Thread.Sleep(1000);
 
-        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-        //    MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
 
-        //    ListBox.Select("AZ Centrifugal Pump 1");
+            ListBox.Select("AZ Centrifugal Pump 1");
 
-        //    var OKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
-        //    {
-        //        NativeClass = @"Button",
-        //        Text = @"OK"
-        //    });
+            var SelectDatasheetTypeOKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
+            {
+                NativeClass = @"Button",
+                Text = @"OK"
+            });
 
-        //    OKButton.Click();
+            SelectDatasheetTypeOKButton.Click();
 
 
-        //    DatasheetDialog.Activate();
+            DatasheetDialog.Activate();
 
 
-        //    SysTabControl32TabControl.Select("New");
+            SysTabControl32TabControl.Select("New");
 
 
-        //    SysListView32ListView.Select(1);
+            SysListView32ListView.Select(1);
 
 
-        //    OpenButton.Click();
+            OpenButton.Click();
 
 
-        //}
+        }
 
 
 
@@ -184,62 +187,104 @@ namespace ExcelDatasheetEditorUFTProject
         public void _003_ModifyCapacityNormal()
         {
 
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
 
-            DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
+            //DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
 
-            editEditField.Select(0, 9);
+            //selectFieldComboBox.Click();
 
-            Thread.Sleep(5000);
+            //Thread.Sleep(1000);
 
-            editEditField.SetText("field90");
+            //editEditField.SetText("field90");
 
+            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            //Thread.Sleep(1000);
 
-            Thread.Sleep(1000);
+            //AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(InitialNormalCapacityUnits);
 
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("l/h");
-
-
-
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            //eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
+            //selectFieldComboBox.Click();
 
-            editEditField.Select(0, 9);
+            //Thread.Sleep(1000);
 
-            Thread.Sleep(1000);
+            //editEditField.SetText("field78");
 
-            editEditField.SetText("field78");
-
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("100");
+            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            //Thread.Sleep(1000);
+
+            //AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(InitialNormalCapacityValue);
 
 
-            editEditField.Select(0, 9);
-
-            editEditField.SetText("field90");
-
-            Thread.Sleep(1000);
-
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            //eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("g");
+            //selectFieldComboBox.Click();
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            //editEditField.SetText("field90");
+
+            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+            //AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("m");
+
+            //eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+         
+
+                Thread.Sleep(1000);
+
+                DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
+
+                editEditField.Select(0, 9);
+
+                Thread.Sleep(5000);
+
+                editEditField.SetText("field90");
 
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+                editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
+                Thread.Sleep(1000);
+
+                AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("l/h");
+
+
+
+                eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+
+
+                editEditField.Select(0, 9);
+
+                Thread.Sleep(1000);
+
+                editEditField.SetText("field78");
+
+                editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+                AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1000000");
+
+
+                eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+
+                editEditField.Select(0, 9);
+
+                editEditField.SetText("field90");
+
+                Thread.Sleep(1000);
+
+                editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+
+                AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("m");
+
+
+                eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
         }
@@ -250,7 +295,7 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            editEditField.Select(0, 9);
+            selectFieldComboBox.Click();
 
             editEditField.SetText("field260");
 
@@ -270,13 +315,7 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            var comboBox = DesignDatasheetXlsmUserNameCWindow
-           .Describe<IComboBox>(new ComboBoxDescription
-           {
-               NativeClass = @"ComboBox"
-           });
-
-            comboBox.Click();
+            selectFieldComboBox.Click();
 
             editEditField.SetText("field433");
 
@@ -296,45 +335,27 @@ namespace ExcelDatasheetEditorUFTProject
         {
 
             Thread.Sleep(1000);
-            var comboBox = DesignDatasheetXlsmUserNameCWindow
-          .Describe<IComboBox>(new ComboBoxDescription
-          {
-              NativeClass = @"ComboBox"
-          });
 
-
-            comboBox.Click();
+            selectFieldComboBox.Click();
 
             editEditField.SetText("field561");
 
-
             editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-
         }
-        
+
         [TestMethod]
         public void _0062_EnterLongRemark()
         {
-
             Thread.Sleep(1000);
 
-            var comboBox = DesignDatasheetXlsmUserNameCWindow
-          .Describe<IComboBox>(new ComboBoxDescription
-          {
-              NativeClass = @"ComboBox"
-          });
-
-
-            comboBox.Click();
+            selectFieldComboBox.Click();
 
             editEditField.SetText("field561");
 
-
             editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-
-            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("This is a comprehensive and detailed remark intended for testing purposes. It includes various aspects of information, ranging from general observations to specific points that could be used in real-world scenarios");
+            AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(ExpectedLongRemark);
 
             eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
@@ -346,10 +367,7 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            editEditField.Select(0, 3);
-
-
-            Thread.Sleep(1000);
+            selectFieldComboBox.Click();
 
             editEditField.SetText("field699");
 
@@ -357,19 +375,14 @@ namespace ExcelDatasheetEditorUFTProject
 
             Field669CImage.Click();
 
-
         }
 
 
         [TestMethod]
         public void _008_CloseDatasheetEditor()
         {
-
             Thread.Sleep(1000);
-
             DesignDatasheetXlsmUserNameCWindow.Close();
-
-
         }
 
 
@@ -398,13 +411,13 @@ namespace ExcelDatasheetEditorUFTProject
 
             ListBoxAddDatasheet.Select(1);
 
-            var OKButton = SelectDatasheetDialog.Describe<IButton>(new ButtonDescription
+            var SelectDatasheetOKButton = SelectDatasheetDialog.Describe<IButton>(new ButtonDescription
             {
                 NativeClass = @"Button",
                 Text = @"OK"
             });
 
-            OKButton.Click();
+            SelectDatasheetOKButton.Click();
 
         }
 
@@ -440,113 +453,141 @@ namespace ExcelDatasheetEditorUFTProject
         }
 
         [TestMethod]
-        public void _012()
+        public void _011_VerifyValuesInDatasheet()
         {
-            //Thread.Sleep(1000);
+           
+            Thread.Sleep(1000);
 
-            //editEditField.Select(0, 3);
+            Reporter.StartReportingContext("Normal Capacity");
 
+            selectFieldComboBox.Click();
 
-            //Thread.Sleep(1000);
+            editEditField.SetText("field78");
 
-            //editEditField.SetText("field78");
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-            //float normalCapacity = float.Parse(i23GridItem.TextPattern.VisibleText);
-
-
-            //Verify.AreEqual(normalCapacity, 100, $"Normal Capacity is {100}");
-
-            //editEditField.Select(0, 3);
+            // Get normal flow value and parse it to float
+            float normalCapacityValue = float.Parse(i23GridItem.TextPattern.VisibleText);
 
 
-            //Thread.Sleep(1000);
+            // Verify normal capacity value
+            Verify.AreEqual(normalCapacityValue, ExpectedNormalCapacityValue, $"Normal Capacity Value is {ExpectedNormalCapacityValue}");
 
-            //editEditField.SetText("field260");
+            Thread.Sleep(1000);
 
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            // Get normal capacity units
+            string normalCapacityUnits = k23GridItem.TextPattern.VisibleText;
 
-            //string visibleTextUnselected = "r";
+            // Verify units
+            Verify.AreEqual(normalCapacityUnits, ExpectedNormalCapacityUnits, $"Normal Capacity Units are {ExpectedNormalCapacityUnits}");
 
-            //string visisbleTextSelected = "";
+            Reporter.EndReportingContext();
 
-            //string pumpTypeBB1 = field260CImage.GetVisibleText();
+            Thread.Sleep(1000);
 
+            Reporter.StartReportingContext("Pump Type");
 
+            selectFieldComboBox.Click();
 
-            //Verify.AreEqual(pumpTypeBB1, visibleTextUnselected, "Verify Pump Type BB1 is unselected");
+            editEditField.SetText("field260");
 
-            //editEditField.Select(0, 3);
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
+            // Get Pump Type BB1 visible text
+            string pumpTypeBB1 = field260CImage.GetVisibleText();
 
-            //Thread.Sleep(1000);
-
-            //editEditField.SetText("field264");
-
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-
-            //string pumpTypeBB5 = field264CImage.GetVisibleText();
-
-            //Verify.AreEqual(pumpTypeBB5, visisbleTextSelected, "Verify Pump Type BB5 is selected");
-
-            //Thread.Sleep(1000);
+            // Verify pump type BB1 is unselected
+            Verify.AreEqual(pumpTypeBB1, PumpTypeUnselected, "Pump Type BB1 is unselected");
 
 
-            //editEditField.Select(0, 3);
+            Thread.Sleep(1000);
 
-            //editEditField.SetText("field433");
+            selectFieldComboBox.Click();
 
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            editEditField.SetText("field264");
 
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            string selectedString = "";
-            //string unselectedString = "□";
+            // Get pump type BB5 visible text
+            string pumpTypeBB5 = field264CImage.GetVisibleText();
 
-            //string granTapsDrain = Field433CImage.GetVisibleText(); // selected
+            // Verify pump type BB5 is selected
+            Verify.AreEqual(pumpTypeBB5, PumpTypeSelected, "Pump Type BB5 is selected");
 
-            //Verify.AreEqual(granTapsDrain, selectedString, "Drain Gran Taps is Selected");
+            Reporter.EndReportingContext();
 
+            Thread.Sleep(1000);
 
-            //Thread.Sleep(1000);
+            Reporter.StartReportingContext("Gran Taps");
 
+            selectFieldComboBox.Click();
 
-            //editEditField.Select(0, 3);
+            editEditField.SetText("field434");
 
-            //editEditField.SetText("field434");
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-            //string granTapsCooling = Field434CImage.GetVisibleText();
-
-
-            //Verify.AreEqual(granTapsCooling, unselectedString, "Cooling Gran Taps is Unselected");
-
-            //Thread.Sleep(1000);
+            // Get gran taps cooling
+            string granTapsCooling = Field434CImage.GetVisibleText();
 
 
-            //editEditField.Select(0, 3);
+            // Verify gran taps cooling is unselected
+            Verify.AreEqual(granTapsCooling, GranTapUnselectedString, "Cooling Gran Taps is Unselected");
 
-            //editEditField.SetText("field561");
+            Thread.Sleep(1000);
 
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            selectFieldComboBox.Click();
 
-            //string expectedLongRemark = "This is a comprehensive and detailed remark intended for testing purposes. It includes various aspects of information, ranging from general observations to specific points that could be used in real-world scenarios";
+            editEditField.SetText("field433");
 
-            //var longRemark = e16GridItem.TextPattern.VisibleText;
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            //Verify.AreEqual(longRemark, expectedLongRemark, "Verify long remak is correct");
+            // Get gran taps drain
+            string granTapsDrain = Field433CImage.GetVisibleText();
 
-            editEditField.Select(0, 3);
+            // Verify gran taps drain  is selected
+            Verify.AreEqual(granTapsDrain, GranTapsSelected, "Gran Taps Drain is Selected");
+
+
+            Reporter.EndReportingContext();
+
+
+            Thread.Sleep(1000);
+
+            Reporter.StartReportingContext("Long Remark");
+
+            selectFieldComboBox.Click();
+
+            editEditField.SetText("field561");
+
+            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+
+            // Get remarks 
+            var longRemark = e16GridItem.TextPattern.VisibleText;
+
+
+            // Verify remarks are Correct
+            Verify.AreEqual(longRemark, ExpectedLongRemark, "Long remak is correct");
+
+            Reporter.EndReportingContext();
+
+            Thread.Sleep(1000);
+
+            Reporter.StartReportingContext("Non Wit");
+
+            selectFieldComboBox.Click();
 
             editEditField.SetText("field669");
 
             editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
+            // Get non wit
             string actualNonWit = Field669CImage.GetVisibleText();
 
-            Verify.AreEqual(actualNonWit, selectedString, "Verify Non Wit is Selected");
+            // Verify non wit is slected
+            Verify.AreEqual(actualNonWit, GranTapsSelected, "Verify Non Wit is Selected");
+
+            Reporter.EndReportingContext();
 
         }
 
