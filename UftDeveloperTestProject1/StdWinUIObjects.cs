@@ -110,6 +110,8 @@ namespace ExcelDatasheetEditorUFTProject
                 Text = @"OK"
             });
 
+        
+
         //Create datasheet
 
 
@@ -121,9 +123,17 @@ namespace ExcelDatasheetEditorUFTProject
             Text = @"Select datasheet by type"
         });
 
-        public static IListBox ListBox = SelectDatasheetByTypeDialog.Describe<IListBox>(new ListBoxDescription
+        public static IListBox SelectDatasheetTypeListBox = SelectDatasheetByTypeDialog.Describe<IListBox>(new ListBoxDescription
         {
             NativeClass = @"ListBox"
+        });
+
+
+
+        public static IButton SelectDatasheetTypeOKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
+        {
+            NativeClass = @"Button",
+            Text = @"OK"
         });
 
         public static IDialog DatasheetDialog = AspenBasicEngineeringV15Window.Describe<IDialog>(new DialogDescription
@@ -144,11 +154,13 @@ namespace ExcelDatasheetEditorUFTProject
             NativeClass = @"SysListView32"
         });
 
-        public static IButton OpenButton = DatasheetDialog.Describe<IButton>(new ButtonDescription
+        public static IButton CreateDatasheetOpenButton = DatasheetDialog.Describe<IButton>(new ButtonDescription
         {
             NativeClass = @"Button",
             Text = @"&Open"
         });
+
+        
 
 
         //Add Datsheet to folder
@@ -202,13 +214,13 @@ namespace ExcelDatasheetEditorUFTProject
 
         });
 
-        public static IComboBox selectFieldComboBox = DesignDatasheetXlsmUserNameCWindow
+        public static IComboBox SelectFieldComboBox = DesignDatasheetXlsmUserNameCWindow
         .Describe<IComboBox>(new ComboBoxDescription
         {
             NativeClass = @"ComboBox"
         });
 
-        public static IEditField editEditField = DesignDatasheetXlsmUserNameCWindow.Describe<IEditField>(new EditFieldDescription
+        public static IEditField ExcelEditEditField = DesignDatasheetXlsmUserNameCWindow.Describe<IEditField>(new EditFieldDescription
         {
             NativeClass = @"Edit"
         });
@@ -220,35 +232,13 @@ namespace ExcelDatasheetEditorUFTProject
         });
 
 
-        public static IUiObject eXCEL6UiObject = DesignDatasheetXlsmUserNameCWindow.Describe<IUiObject>(new UiObjectDescription
+        public static IUiObject Excel6UiObject = DesignDatasheetXlsmUserNameCWindow.Describe<IUiObject>(new UiObjectDescription
         {
             WindowClassRegExp = @"EXCEL6"
         });
 
         #endregion
 
-
-        //#region verification 
-
-        
-        //public static IWindow attributesViewP101Window = AspenBasicEngineeringV15Window.Describe<IWindow>(new WindowDescription
-        //{
-        //    IsChildWindow = true,
-        //    IsOwnedWindow = false,
-        //    WindowClassRegExp = @"Afx:",
-        //    WindowTitleRegExp = @"Attributes View: P-101"
-        //});
-
-
-        //public static IListView sysListView32ListView = attributesViewP101Window.Describe<IListView>(new ListViewDescription
-        //{
-        //    NativeClass = @"SysListView32"
-        //});
-        
-
-
-
-        //#endregion 
 
 
 

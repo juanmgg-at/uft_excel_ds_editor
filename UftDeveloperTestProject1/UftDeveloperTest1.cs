@@ -82,8 +82,6 @@ namespace ExcelDatasheetEditorUFTProject
             MenuBarUiObject.SendKeys("c");
 
 
-
-
             SelectClassDialogCreateEquipment.Activate();
 
 
@@ -142,28 +140,18 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            for (int i = 0; i < 5; i++)
+            {
+                MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            }
 
             MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
+            SelectDatasheetTypeListBox.Select("AZ Centrifugal Pump 1");
 
-            ListBox.Select("AZ Centrifugal Pump 1");
-
-            var SelectDatasheetTypeOKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
-            {
-                NativeClass = @"Button",
-                Text = @"OK"
-            });
-
+            
             SelectDatasheetTypeOKButton.Click();
 
 
@@ -176,7 +164,7 @@ namespace ExcelDatasheetEditorUFTProject
             SysListView32ListView.Select(1);
 
 
-            OpenButton.Click();
+            CreateDatasheetOpenButton.Click();
 
 
         }
@@ -187,104 +175,57 @@ namespace ExcelDatasheetEditorUFTProject
         public void _003_ModifyCapacityNormal()
         {
 
-            //Thread.Sleep(1000);
-
-            //DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
-
-            //selectFieldComboBox.Click();
-
-            //Thread.Sleep(1000);
-
-            //editEditField.SetText("field90");
-
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-            //Thread.Sleep(1000);
-
-            //AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(InitialNormalCapacityUnits);
-
-            //eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
-
-
-            //selectFieldComboBox.Click();
-
-            //Thread.Sleep(1000);
-
-            //editEditField.SetText("field78");
-
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-
-            //Thread.Sleep(1000);
-
-            //AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(InitialNormalCapacityValue);
-
-
-            //eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
-
-
-            //selectFieldComboBox.Click();
-
-            //editEditField.SetText("field90");
-
-            //editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-            //AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("m");
-
-            //eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
-
-         
 
                 Thread.Sleep(1000);
 
                 DesignDatasheetXlsmUserNameCWindow.WaitUntilEnabled();
 
-                editEditField.Select(0, 9);
+                ExcelEditEditField.Select(0, 9);
 
-                Thread.Sleep(5000);
+                Thread.Sleep(5000); 
 
-                editEditField.SetText("field90");
-
-
-                editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-                Thread.Sleep(1000);
-
-                AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("l/h");
+                ExcelEditEditField.SetText("field90");
 
 
-
-                eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
-
-
-
-                editEditField.Select(0, 9);
+                ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
                 Thread.Sleep(1000);
 
-                editEditField.SetText("field78");
-
-                editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
-
-                AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1000000");
+                AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(InitialNormalCapacityUnits);
 
 
-                eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+                Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
-                editEditField.Select(0, 9);
 
-                editEditField.SetText("field90");
+                ExcelEditEditField.Select(0, 9);
 
                 Thread.Sleep(1000);
 
-                editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+                ExcelEditEditField.SetText("field78");
+
+                ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+
+                AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(InitialNormalCapacityValue);
+
+
+                Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+
+
+                ExcelEditEditField.Select(0, 9);
+
+                ExcelEditEditField.SetText("field90");
+
+                Thread.Sleep(1000);
+
+                ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
                 AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("m");
 
 
-                eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+                Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
         }
@@ -295,17 +236,16 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field260");
+            ExcelEditEditField.SetText("field260");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             Thread.Sleep(1000);
 
             field260CImage.Click();
             field264CImage.Click();
-
 
         }
 
@@ -315,11 +255,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field433");
+            ExcelEditEditField.SetText("field433");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
             Thread.Sleep(1000);
@@ -336,11 +276,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field561");
+            ExcelEditEditField.SetText("field561");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
         }
 
@@ -349,15 +289,15 @@ namespace ExcelDatasheetEditorUFTProject
         {
             Thread.Sleep(1000);
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field561");
+            ExcelEditEditField.SetText("field561");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys(ExpectedLongRemark);
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
         }
 
@@ -367,11 +307,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field699");
+            ExcelEditEditField.SetText("field699");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             Field669CImage.Click();
 
@@ -460,11 +400,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Reporter.StartReportingContext("Normal Capacity");
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field78");
+            ExcelEditEditField.SetText("field78");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             // Get normal flow value and parse it to float
             float normalCapacityValue = float.Parse(i23GridItem.TextPattern.VisibleText);
@@ -487,11 +427,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Reporter.StartReportingContext("Pump Type");
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field260");
+            ExcelEditEditField.SetText("field260");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             // Get Pump Type BB1 visible text
             string pumpTypeBB1 = field260CImage.GetVisibleText();
@@ -502,11 +442,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field264");
+            ExcelEditEditField.SetText("field264");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             // Get pump type BB5 visible text
             string pumpTypeBB5 = field264CImage.GetVisibleText();
@@ -520,11 +460,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Reporter.StartReportingContext("Gran Taps");
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field434");
+            ExcelEditEditField.SetText("field434");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             // Get gran taps cooling
             string granTapsCooling = Field434CImage.GetVisibleText();
@@ -535,11 +475,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field433");
+            ExcelEditEditField.SetText("field433");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             // Get gran taps drain
             string granTapsDrain = Field433CImage.GetVisibleText();
@@ -555,11 +495,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Reporter.StartReportingContext("Long Remark");
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field561");
+            ExcelEditEditField.SetText("field561");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
             // Get remarks 
@@ -575,11 +515,11 @@ namespace ExcelDatasheetEditorUFTProject
 
             Reporter.StartReportingContext("Non Wit");
 
-            selectFieldComboBox.Click();
+            SelectFieldComboBox.Click();
 
-            editEditField.SetText("field669");
+            ExcelEditEditField.SetText("field669");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             // Get non wit
             string actualNonWit = Field669CImage.GetVisibleText();
@@ -588,6 +528,9 @@ namespace ExcelDatasheetEditorUFTProject
             Verify.AreEqual(actualNonWit, GranTapsSelected, "Verify Non Wit is Selected");
 
             Reporter.EndReportingContext();
+
+
+            DesignDatasheetXlsmUserNameCWindow.Close();
 
         }
 

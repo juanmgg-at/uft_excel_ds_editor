@@ -105,8 +105,6 @@ namespace ExcelDatasheetEditorUFTProject
             });
 
         #endregion
-
-
         #region Page 3
 
         public static IPane PanePage3 = NestedPane.Describe<IPane>(new PaneDescription
@@ -143,80 +141,6 @@ namespace ExcelDatasheetEditorUFTProject
         });
 
         #endregion
-
-
-        #region Page 4 
-
-        public static IGridItem e16GridItem = Desktop.Describe<IWindow>(new WindowDescription
-        {
-            ProcessName = @"EXCEL",
-           Path = @"Window",
-            SupportedPatterns = new string[] { @"LegacyIAccessible", @"Transform", @"Window" },
-            FrameworkId = @"Win32",
-            ControlType = @"Window",
-            AutomationId = string.Empty
-        })
-            .Describe<IPane>(new PaneDescription
-            {
-                ProcessName = @"EXCEL",
-                Name = string.Empty,
-                Path = @"Window;Pane",
-                SupportedPatterns = new string[] { @"LegacyIAccessible" },
-                FrameworkId = @"Win32",
-                ControlType = @"Pane",
-                AutomationId = string.Empty,
-                Index = 3
-            })
-            .Describe<IUiObject>(new UiObjectDescription
-            {
-                ProcessName = @"EXCEL",
-                Path = @"Window;Pane;Custom",
-                SupportedPatterns = new string[] { @"LegacyIAccessible" },
-                FrameworkId = @"Win32",
-                ControlType = @"Custom",
-                AutomationId = string.Empty
-            })
-            .Describe<IPane>(new PaneDescription
-            {
-                ProcessName = @"EXCEL",
-                Path = @"Window;Pane;Custom;Pane",
-                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection" },
-                FrameworkId = string.Empty,
-                ControlType = @"Pane",
-            })
-            .Describe<IPane>(new PaneDescription
-            {
-                ProcessName = @"EXCEL",
-                Name = @"Sheet Page 4",
-                Path = @"Window;Pane;Custom;Pane;Pane",
-                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection", @"Selection2", @"SelectionItem" },
-                FrameworkId = string.Empty,
-                ControlType = @"Pane",
-                AutomationId = @"Page 4"
-            })
-            .Describe<IGrid>(new GridDescription
-            {
-                ProcessName = @"EXCEL",
-                Name = @"Grid",
-                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid",
-                SupportedPatterns = new string[] { @"Grid", @"LegacyIAccessible" },
-                FrameworkId = string.Empty,
-                ControlType = @"DataGrid",
-                AutomationId = @"Grid"
-            })
-            .Describe<IGridItem>(new GridItemDescription
-            {
-                ProcessName = @"EXCEL",
-                Name = @"E16",
-                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid;DataItem",
-                SupportedPatterns = new string[] { @"GridItem", @"Invoke", @"LegacyIAccessible", @"SelectionItem", @"Text", @"Value" },
-                FrameworkId = string.Empty,
-                ControlType = @"DataItem",
-                AutomationId = @"E16"
-            });
-
-        #endregion
-
         #region Page 5 
 
         public static IPane PanePage5 = NestedPane.Describe<IPane>(new PaneDescription
@@ -246,10 +170,12 @@ namespace ExcelDatasheetEditorUFTProject
 
         // Verification
         #region Page 1 
-        public static IGridItem i23GridItem = Desktop.Describe<IWindow>(new WindowDescription
+
+    
+
+public static IGridItem i23GridItem = Desktop.Describe<IWindow>(new WindowDescription
         {
             ProcessName = @"EXCEL",
-            
             Path = @"Window",
             SupportedPatterns = new string[] { @"LegacyIAccessible", @"Transform", @"Window" },
             FrameworkId = @"Win32",
@@ -386,11 +312,76 @@ namespace ExcelDatasheetEditorUFTProject
 
         #endregion
 
-        #region Page 2 
+        #region Page 4 
 
-
+        public static IGridItem e16GridItem = Desktop.Describe<IWindow>(new WindowDescription
+        {
+            ProcessName = @"EXCEL",
+            Path = @"Window",
+            SupportedPatterns = new string[] { @"LegacyIAccessible", @"Transform", @"Window" },
+            FrameworkId = @"Win32",
+            ControlType = @"Window",
+            AutomationId = string.Empty
+        })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = string.Empty,
+                Path = @"Window;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                FrameworkId = @"Win32",
+                ControlType = @"Pane",
+                AutomationId = string.Empty,
+                Index = 3
+            })
+            .Describe<IUiObject>(new UiObjectDescription
+            {
+                ProcessName = @"EXCEL",
+                Path = @"Window;Pane;Custom",
+                SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                FrameworkId = @"Win32",
+                ControlType = @"Custom",
+                AutomationId = string.Empty
+            })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Path = @"Window;Pane;Custom;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection" },
+                FrameworkId = string.Empty,
+                ControlType = @"Pane",
+            })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Sheet Page 4",
+                Path = @"Window;Pane;Custom;Pane;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection", @"Selection2", @"SelectionItem" },
+                FrameworkId = string.Empty,
+                ControlType = @"Pane",
+                AutomationId = @"Page 4"
+            })
+            .Describe<IGrid>(new GridDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Grid",
+                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid",
+                SupportedPatterns = new string[] { @"Grid", @"LegacyIAccessible" },
+                FrameworkId = string.Empty,
+                ControlType = @"DataGrid",
+                AutomationId = @"Grid"
+            })
+            .Describe<IGridItem>(new GridItemDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"E16",
+                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid;DataItem",
+                SupportedPatterns = new string[] { @"GridItem", @"Invoke", @"LegacyIAccessible", @"SelectionItem", @"Text", @"Value" },
+                FrameworkId = string.Empty,
+                ControlType = @"DataItem",
+                AutomationId = @"E16"
+            });
 
         #endregion
-
     }
 }

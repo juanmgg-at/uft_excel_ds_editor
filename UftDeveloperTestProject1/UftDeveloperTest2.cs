@@ -61,7 +61,7 @@ namespace ExcelDatasheetEditorUFTProject
 
 
         [TestMethod]
-        public void _012_CreateATContinuousListShellAndTubeExchangers()
+        public void _012_CreateATContinuousListShellAndTubeExchangersDatasheet()
         {
 
 
@@ -79,15 +79,10 @@ namespace ExcelDatasheetEditorUFTProject
 
             Thread.Sleep(1000);
 
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
-
-            MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            for (int i = 0; i < 4; i++)
+            {
+                MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Down);
+            }
 
             MenuBarUiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
@@ -95,9 +90,9 @@ namespace ExcelDatasheetEditorUFTProject
             SelectDatasheetByTypeDialog.Activate();
 
 
-            ListBox.Click();
+            SelectDatasheetTypeListBox.Click();
 
-            ListBox.Select("AT Continuous List Shell And Tube Heat Exchangers");
+            SelectDatasheetTypeListBox.Select("AT Continuous List Shell And Tube Heat Exchangers");
 
 
             var OKButton = SelectDatasheetByTypeDialog.Describe<IButton>(new ButtonDescription
@@ -121,7 +116,7 @@ namespace ExcelDatasheetEditorUFTProject
             SysListView32ListView.Select("AT Continuous List Shell And Tube Heat Exchangers");
 
 
-            OpenButton.Click();
+            CreateDatasheetOpenButton.Click();
 
         }
 
@@ -142,77 +137,77 @@ namespace ExcelDatasheetEditorUFTProject
 
             comboBox.Click();
 
-            editEditField.SetText("Field1177");
+            ExcelEditEditField.SetText("Field1177");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");
 
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("1");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("2");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("2");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("3");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("3");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("4");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("4");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            editEditField.Select(0, 3);
+            ExcelEditEditField.Select(0, 3);
 
-            editEditField.SetText("Field1169");
+            ExcelEditEditField.SetText("Field1169");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("c");
 
-            eXCEL6UiObject.SendKeys("m");
+            Excel6UiObject.SendKeys("m");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
-            editEditField.Select(0, 9);
+            ExcelEditEditField.Select(0, 9);
 
-            editEditField.SetText("Field1185");
+            ExcelEditEditField.SetText("Field1185");
 
-            editEditField.SendKeys(HP.LFT.SDK.Keys.Return);
+            ExcelEditEditField.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("r");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("t");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("d");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
             AZCentrifugalPump1DesignDatasheetXlsmUiObject.SendKeys("e");
 
-            eXCEL6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
+            Excel6UiObject.SendKeys(HP.LFT.SDK.Keys.Return);
 
         }
 
