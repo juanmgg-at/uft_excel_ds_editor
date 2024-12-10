@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using HP.LFT.SDK;
 using HP.LFT.SDK.StdWin;
 
-namespace UftDeveloperTestProject1
+namespace ExcelDatasheetEditorUFTProject
 {
     public static class StdWinUIObjects
     {
@@ -220,5 +220,31 @@ namespace UftDeveloperTestProject1
         });
 
         #endregion
+
+
+        //#region verification 
+
+        
+        //public static IWindow attributesViewP101Window = AspenBasicEngineeringV15Window.Describe<IWindow>(new WindowDescription
+        //{
+        //    IsChildWindow = true,
+        //    IsOwnedWindow = false,
+        //    WindowClassRegExp = @"Afx:",
+        //    WindowTitleRegExp = @"Attributes View: P-101"
+        //});
+
+
+        //public static IListView sysListView32ListView = attributesViewP101Window.Describe<IListView>(new ListViewDescription
+        //{
+        //    NativeClass = @"SysListView32"
+        //});
+        
+
+
+
+        //#endregion 
+
+
+
     }
 }

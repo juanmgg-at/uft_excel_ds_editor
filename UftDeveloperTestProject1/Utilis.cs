@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UftDeveloperTestProject1
+namespace ExcelDatasheetEditorUFTProject
 {
     public static class Utilis
     {

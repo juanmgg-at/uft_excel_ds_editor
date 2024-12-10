@@ -7,7 +7,7 @@ using HP.LFT.SDK;
 using HP.LFT.SDK.UIAPro;
 
 
-namespace UftDeveloperTestProject1
+namespace ExcelDatasheetEditorUFTProject
 {
     public static class UIAProUIObjects
     {
@@ -62,34 +62,7 @@ namespace UftDeveloperTestProject1
         #endregion
 
 
-        #region Page 1 
-
-        public static IPane PanePage1 = NestedPane
-            .Describe<IPane>(new PaneDescription
-            {
-                ProcessName = @"EXCEL",
-                Name = @"Sheet Page 1",
-                Path = @"Window;Pane;Custom;Pane;Pane",
-                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection", @"Selection2", @"SelectionItem" },
-                FrameworkId = string.Empty,
-                ControlType = @"Pane",
-                AutomationId = @"Page 1"
-            });
-
-        public static IImage field78CImage = PanePage1
-            .Describe<IImage>(new ImageDescription
-            {
-                ProcessName = @"EXCEL",
-                Name = @"Field78-C",
-                Path = @"Window;Pane;Custom;Pane;Pane;Image",
-                SupportedPatterns = new string[] { @"Invoke", @"LegacyIAccessible", @"SelectionItem" },
-                FrameworkId = string.Empty,
-                ControlType = @"Image",
-                AutomationId = string.Empty
-            });
-
-        #endregion
-
+       // Entering values to datasheet
 
         #region Page 2
 
@@ -135,8 +108,8 @@ namespace UftDeveloperTestProject1
 
 
         #region Page 3
-        
-        public static IPane PanePage3= NestedPane.Describe<IPane>(new PaneDescription
+
+        public static IPane PanePage3 = NestedPane.Describe<IPane>(new PaneDescription
         {
             ProcessName = @"EXCEL",
             Name = @"Sheet Page 3",
@@ -146,7 +119,7 @@ namespace UftDeveloperTestProject1
             ControlType = @"Pane",
             AutomationId = @"Page 3"
         });
-        
+
         public static IImage Field433CImage = PanePage3.Describe<IImage>(new ImageDescription
         {
             ProcessName = @"EXCEL",
@@ -168,13 +141,88 @@ namespace UftDeveloperTestProject1
             ControlType = @"Image",
             AutomationId = string.Empty
         });
-       
+
         #endregion
 
-        
+
+        #region Page 4 
+
+        public static IGridItem e16GridItem = Desktop.Describe<IWindow>(new WindowDescription
+        {
+            ProcessName = @"EXCEL",
+           Path = @"Window",
+            SupportedPatterns = new string[] { @"LegacyIAccessible", @"Transform", @"Window" },
+            FrameworkId = @"Win32",
+            ControlType = @"Window",
+            AutomationId = string.Empty
+        })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = string.Empty,
+                Path = @"Window;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                FrameworkId = @"Win32",
+                ControlType = @"Pane",
+                AutomationId = string.Empty,
+                Index = 3
+            })
+            .Describe<IUiObject>(new UiObjectDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm",
+                Path = @"Window;Pane;Custom",
+                SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                FrameworkId = @"Win32",
+                ControlType = @"Custom",
+                AutomationId = string.Empty
+            })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15))",
+                Path = @"Window;Pane;Custom;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection" },
+                FrameworkId = string.Empty,
+                ControlType = @"Pane",
+                AutomationId = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm"
+            })
+            .Describe<IPane>(new PaneDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Sheet Page 4",
+                Path = @"Window;Pane;Custom;Pane;Pane",
+                SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection", @"Selection2", @"SelectionItem" },
+                FrameworkId = string.Empty,
+                ControlType = @"Pane",
+                AutomationId = @"Page 4"
+            })
+            .Describe<IGrid>(new GridDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"Grid",
+                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid",
+                SupportedPatterns = new string[] { @"Grid", @"LegacyIAccessible" },
+                FrameworkId = string.Empty,
+                ControlType = @"DataGrid",
+                AutomationId = @"Grid"
+            })
+            .Describe<IGridItem>(new GridItemDescription
+            {
+                ProcessName = @"EXCEL",
+                Name = @"E16",
+                Path = @"Window;Pane;Custom;Pane;Pane;DataGrid;DataItem",
+                SupportedPatterns = new string[] { @"GridItem", @"Invoke", @"LegacyIAccessible", @"SelectionItem", @"Text", @"Value" },
+                FrameworkId = string.Empty,
+                ControlType = @"DataItem",
+                AutomationId = @"E16"
+            });
+
+        #endregion
+
         #region Page 5 
-        
-        public static IPane PanePage5= NestedPane.Describe<IPane>(new PaneDescription
+
+        public static IPane PanePage5 = NestedPane.Describe<IPane>(new PaneDescription
         {
             ProcessName = @"EXCEL",
             Name = @"Sheet Page 5",
@@ -184,7 +232,7 @@ namespace UftDeveloperTestProject1
             ControlType = @"Pane",
             AutomationId = @"Page 5"
         });
-        
+
         public static IImage Field669CImage = PanePage5.Describe<IImage>(new ImageDescription
         {
             ProcessName = @"EXCEL",
@@ -198,6 +246,87 @@ namespace UftDeveloperTestProject1
 
         #endregion
 
+
+        // Verification
+        #region Page 1 
+        public static IGridItem i23GridItem = Desktop.Describe<IWindow>(new WindowDescription
+        {
+            ProcessName = @"EXCEL",
+            Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm - UserName: CORP\gutierrj Server: \\ABE-Automation.qae.aspentech.com\A8",
+            Path = @"Window",
+            SupportedPatterns = new string[] { @"LegacyIAccessible", @"Transform", @"Window" },
+            FrameworkId = @"Win32",
+            ControlType = @"Window",
+            AutomationId = string.Empty
+        })
+                    .Describe<IPane>(new PaneDescription
+                    {
+                        ProcessName = @"EXCEL",
+                        Name = string.Empty,
+                        Path = @"Window;Pane",
+                        SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                        FrameworkId = @"Win32",
+                        ControlType = @"Pane",
+                        AutomationId = string.Empty,
+                        Index = 3
+                    })
+                    .Describe<IUiObject>(new UiObjectDescription
+                    {
+                        ProcessName = @"EXCEL",
+                        Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm",
+                        Path = @"Window;Pane;Custom",
+                        SupportedPatterns = new string[] { @"LegacyIAccessible" },
+                        FrameworkId = @"Win32",
+                        ControlType = @"Custom",
+                        AutomationId = string.Empty
+                    })
+                    .Describe<IPane>(new PaneDescription
+                    {
+                        ProcessName = @"EXCEL",
+                        Name = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15))",
+                        Path = @"Window;Pane;Custom;Pane",
+                        SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection" },
+                        FrameworkId = string.Empty,
+                        ControlType = @"Pane",
+                        AutomationId = @"(P-101, AZ Centrifugal Pump 1 (Design)(DatasheetID=15)).xlsm"
+                    })
+                    .Describe<IPane>(new PaneDescription
+                    {
+                        ProcessName = @"EXCEL",
+                        Name = @"Sheet Page 1",
+                        Path = @"Window;Pane;Custom;Pane;Pane",
+                        SupportedPatterns = new string[] { @"LegacyIAccessible", @"Selection", @"Selection2", @"SelectionItem" },
+                        FrameworkId = string.Empty,
+                        ControlType = @"Pane",
+                        AutomationId = @"Page 1"
+                    })
+                    .Describe<IGrid>(new GridDescription
+                    {
+                        ProcessName = @"EXCEL",
+                        Name = @"Grid",
+                        Path = @"Window;Pane;Custom;Pane;Pane;DataGrid",
+                        SupportedPatterns = new string[] { @"Grid", @"LegacyIAccessible" },
+                        FrameworkId = string.Empty,
+                        ControlType = @"DataGrid",
+                        AutomationId = @"Grid"
+                    })
+                    .Describe<IGridItem>(new GridItemDescription
+                    {
+                        ProcessName = @"EXCEL",
+                        Name = @"I23",
+                        Path = @"Window;Pane;Custom;Pane;Pane;DataGrid;DataItem",
+                        SupportedPatterns = new string[] { @"GridItem", @"Invoke", @"LegacyIAccessible", @"SelectionItem", @"Text", @"Value" },
+                        FrameworkId = string.Empty,
+                        ControlType = @"DataItem",
+                        AutomationId = @"I23"
+                    });
+        #endregion
+
+        #region Page 2 
+
+
+
+        #endregion
 
     }
 }

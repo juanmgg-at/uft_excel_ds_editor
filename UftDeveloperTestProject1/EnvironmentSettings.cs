@@ -3,7 +3,7 @@ using System;
 using System.Net;
 
 
-namespace UftDeveloperTestProject1
+namespace ExcelDatasheetEditorUFTProject
 {
     
 
@@ -15,7 +15,7 @@ namespace UftDeveloperTestProject1
 
             #region Aspen Basic Engineering Workspace Login Information
             //Workspace
-            public const string workspace = "A7";
+            public const string workspace = "A8";
 
         #endregion
 
