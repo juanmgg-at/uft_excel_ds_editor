@@ -126,7 +126,7 @@ namespace ExcelDatasheetEditorUFTProject
 
 
         [TestMethod]
-        public void _002_CreateDatasheet()
+        public void _002_CreateAZCentrifugalPump1Datasheet()
         {
             Thread.Sleep(1000);
 
@@ -393,7 +393,7 @@ namespace ExcelDatasheetEditorUFTProject
         }
 
         [TestMethod]
-        public void _011_VerifyValuesInDatasheet()
+        public void _011_VerifyCreateAZCentrifugalPump1DatasheetValues()
         {
            
             Thread.Sleep(1000);

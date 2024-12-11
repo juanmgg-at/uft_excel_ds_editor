@@ -76,10 +76,10 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="EnvironmentSettings.cs" />
-    <Compile Include="StdWinUIObjects.cs" />
+    <Compile Include="UIObjects\StdWinUIObjects.cs" />
     <Compile Include="UftDeveloperTest1.cs" />
     <Compile Include="UftDeveloperTest2.cs" />
-    <Compile Include="UIAProUIObjects.cs" />
+    <Compile Include="UIObjects\UIAProUIObjects.cs" />
     <Compile Include="UnitTestClassBase.cs" />
     <Compile Include="Utilis.cs" />
     <None Include="App.config" />

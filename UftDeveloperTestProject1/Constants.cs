@@ -19,5 +19,20 @@ namespace ExcelDatasheetEditorUFTProject
         public const string GranTapsSelected = "";
         public const string GranTapUnselectedString = "□";
 
+
+        public const string ExpectedShellDiamD10 = "1";
+        public const string ExpectedShellDiamD11 = "100";
+        public const string ExpectedShellDiamD12 = "2";
+        public const string ExpectedShellDiamD13 = "200";
+        public const string ExpectedShellDiamD14 = "3";
+        public const string ExpectedShellDiamD15 = "300";
+        public const string ExpectedShellDiamD16 = "4";
+        public const string ExpectedShellDiamD17 = "400";
+        public const string ExpectedShellDiamUnits = "cm";
+
+        public const string ExpectedExchangerStatus1 = "Revamp";
+        public const string ExpectedExchangerStatus2 = "Temporary";
+        public const string ExpectedExchangerStatus3 = "Dismantle";
+        public const string ExpectedExchangerStatus4 = "Existing";
     }
 }
